@@ -7,7 +7,10 @@ body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
-
+.container {
+    background-color: #0f0;
+    width: 100%;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -28,15 +31,16 @@ body {
 }
 
 /* Container around content */
-.container {
+.event{
   padding: 10px 40px;
   position: relative;
-  background-color: inherit;
+  background-color: #ff0;
   width: 50%;
+  border: 1px solid #000;
 }
 
 /* The circles on the timeline */
-.container::after {
+.event::after {
   content: '';
   position: absolute;
   width: 25px;
@@ -108,14 +112,14 @@ body {
   }
 
 /* Full-width containers */
-  .container {
+  .event {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
 /* Make sure that all arrows are pointing leftwards */
-  .container::before {
+  .event::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
