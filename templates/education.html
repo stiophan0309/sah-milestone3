@@ -1,24 +1,25 @@
 {% extends 'base.html' %}
-{% block title %} Experience {% endblock %}
+{% block title %} Education {% endblock %}
 
 {% block content %}
 <a href="{{ url_for('home') }}">Home</a> <br><br>
 <a href="{{ url_for('get_skills') }}">Skills</a><br><br>
-<h3>My Experience and Technologies</h3>
-    {% for experience in skills %}
-        <h5>HTML:</h5> {{experience.HTML}} <br><br>
-        <h5>CSS:</h5> {{experience.CSS}}
-        <h5>Javascript:</h5> {{experience.Javascript}}
-        <h5>Python</h5> {{experience.Python}}
-        <h5>MongoDB:</h5> {{experience.MongoDB}}
-        <h5>CSS:</h5> {{experience.CSS}}
-        <h5>Photoshop CS6</h5> {{experience.Photoshop_CS6}}
-        <h5>MS Office:</h5> {{experience.Microsoft_Office}}
-        <h5>Linux (Ubuntu):</h5> {{experience.Linux}}
-        <h5>Slack:</h5> {{experience.Slack}}
-        <h5>Pastels:</h5> {{experience.Pastels}}
-        <h5>Charcoal:</h5> {{experience.Charcoal}}
-        <h5>Acrylic:</h5> {{experience.Acrylic}}
-        <h5>Oil:</h5> {{experience.Oil}}
+<h3>My Education</h3>
+    {% for education in skills %}
+    <div class="timeline">
+        <div class="container left">
+            <div class="content">
+                <h2>2017</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <h2>2016</h2>
+                <p>Lorem ipsum..</p>
+            </div>
+    </div>
+</div>
+        
     {% endfor %}
 {% endblock %}
