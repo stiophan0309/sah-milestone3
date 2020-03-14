@@ -1,23 +1,23 @@
-{% block title %} Experience {% endblock %}
+{% block title %} Experience & Technologies/Media {% endblock %}
 
 {% block content %}
 <a href="{{ url_for('home') }}">Home</a> <br><br>
 <a href="{{ url_for('get_skills') }}">Skills</a><br><br>
-<h3>My Experience and Technologies</h3>
+<h3>My Experience, Technologies and Media</h3>
     {% for experience in skills %}
-        <h5>HTML:</h5> {{experience.HTML}} <br><br>
-        <h5>CSS:</h5> {{experience.CSS}}
-        <h5>Javascript:</h5> {{experience.Javascript}}
-        <h5>Python</h5> {{experience.Python}}
-        <h5>MongoDB:</h5> {{experience.MongoDB}}
-        <h5>CSS:</h5> {{experience.CSS}}
-        <h5>Photoshop CS6</h5> {{experience.Photoshop_CS6}}
-        <h5>MS Office:</h5> {{experience.Microsoft_Office}}
-        <h5>Linux (Ubuntu):</h5> {{experience.Linux}}
-        <h5>Slack:</h5> {{experience.Slack}}
-        <h5>Pastels:</h5> {{experience.Pastels}}
-        <h5>Charcoal:</h5> {{experience.Charcoal}}
-        <h5>Acrylic:</h5> {{experience.Acrylic}}
-        <h5>Oil:</h5> {{experience.Oil}}
+        <h5>{{experience.HTML[0]}}</h5><br><img src="{{experience.HTML[1]}}"><br><p>{{experience.HTML[2]}}</p><br><br>
+        <h5>{{experience.CSS[0]}}</h5><br><img src="{{experience.CSS[1]}}"><br><p>{{experience.CSS[2]}}</p><br><br>
+        <h5>{{experience.Javascript[0]}}</h5><br><img src="{{experience.Javascript[1]}}"><br><p>{{experience.Javascript[2]}}</p><br><br>
+        <h5>{{experience.Python[0]}}</h5><br><img src="{{experience.Python[1]}}"><br><p>{{experience.Python[2]}}</p><br><br>
+        <h5>{{experience.MongoDB[0]}}</h5><br><img src="{{experience.MongoDB[1]}}"><br><p>{{experience.MongoDB[2]}}</p><br><br>
+        <h5>{{experience.GitHub[0]}}</h5><br><img src="{{experience.GitHub[1]}}"><br><p>{{experience.GitHub[2]}}</p><br><br>
+        <h5>{{experience.Photoshop_CS6[0]}}</h5><br><img src="{{experience.Photoshop_CS6[1]}}"><br><p>{{experience.HTML[2]}}</p><br><br>
+        <h5>{{experience.Microsoft_Office[0]}}</h5><br><img src="{{experience.Microsoft_Office[1]}}"><br><p>{{experience.Microsoft_Office[2]}}</p><br><br>
+        <h5>Linux (Ubuntu):</h5><br><img src="{{experience.Linux[1]}}"><br><p>{{experience.Linux[2]}}</p><br><br>
+        <h5>{{experience.Slack[0]}}</h5><br><img src="{{experience.Slack[1]}}"><br><p>{{experience.Slack[2]}}</p><br><br>
+        <h5>{{experience.Pastels[0]}}</h5><br><img src="{{experience.Pastels[1]}}"><br><p>{{experience.Pastels[2]}}</p><br><br>
+        <h5>{{experience.Charcoal[0]}}</h5><br><img src="{{experience.Pastels[1]}}"><br><p>{{experience.Charcoal[2]}}</p><br><br>
+        <h5>{{experience.Acrylic[0]}}</h5><br><img src="{{experience.Acrylic[1]}}"><br><p>{{experience.Acrylic[2]}}</p><br><br>
+        <h5>{{experience.Oil[0]}}</h5><br><img src="{{experience.Oil[1]}}"><br><p>{{experience.Oil[2]}}</p><br><br>
     {% endfor %}
 {% endblock %}

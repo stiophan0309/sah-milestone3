@@ -1,10 +1,11 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
+}
+
+/* Timeline styling */
+* {
+  box-sizing: border-box;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -132,3 +133,5 @@ body {
   left: 0%;
   }
 }
+
+/* End of Timeline styling */
