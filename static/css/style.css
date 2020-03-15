@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-/* Timeline styling */
+/* Timeline styling source: W3C Schools */
 * {
   box-sizing: border-box;
 }
@@ -135,3 +135,7 @@ body {
 }
 
 /* End of Timeline styling */
+
+.card {
+    border: 1px sold #474e5d;
+}

@@ -1,23 +1,128 @@
+{% extends 'base.html' %}
 {% block title %} Experience & Technologies/Media {% endblock %}
+
+<section class="row">
 
 {% block content %}
 <a href="{{ url_for('home') }}">Home</a> <br><br>
 <a href="{{ url_for('get_skills') }}">Skills</a><br><br>
 <h3>My Experience, Technologies and Media</h3>
     {% for experience in skills %}
-        <h5>{{experience.HTML[0]}}</h5><br><img src="{{experience.HTML[1]}}"><br><p>{{experience.HTML[2]}}</p><br><br>
-        <h5>{{experience.CSS[0]}}</h5><br><img src="{{experience.CSS[1]}}"><br><p>{{experience.CSS[2]}}</p><br><br>
-        <h5>{{experience.Javascript[0]}}</h5><br><img src="{{experience.Javascript[1]}}"><br><p>{{experience.Javascript[2]}}</p><br><br>
-        <h5>{{experience.Python[0]}}</h5><br><img src="{{experience.Python[1]}}"><br><p>{{experience.Python[2]}}</p><br><br>
-        <h5>{{experience.MongoDB[0]}}</h5><br><img src="{{experience.MongoDB[1]}}"><br><p>{{experience.MongoDB[2]}}</p><br><br>
-        <h5>{{experience.GitHub[0]}}</h5><br><img src="{{experience.GitHub[1]}}"><br><p>{{experience.GitHub[2]}}</p><br><br>
-        <h5>{{experience.Photoshop_CS6[0]}}</h5><br><img src="{{experience.Photoshop_CS6[1]}}"><br><p>{{experience.HTML[2]}}</p><br><br>
-        <h5>{{experience.Microsoft_Office[0]}}</h5><br><img src="{{experience.Microsoft_Office[1]}}"><br><p>{{experience.Microsoft_Office[2]}}</p><br><br>
-        <h5>{{experience.Linux[0]}}</h5><br><img src="{{experience.Linux[1]}}"><br><p>{{experience.Linux[2]}}</p><br><br>
-        <h5>{{experience.Slack[0]}}</h5><br><img src="{{experience.Slack[1]}}"><br><p>{{experience.Slack[2]}}</p><br><br>
-        <h5>{{experience.Pastels[0]}}</h5><br><img src="{{experience.Pastels[1]}}"><br><p>{{experience.Pastels[2]}}</p><br><br>
-        <h5>{{experience.Charcoal[0]}}</h5><br><img src="{{experience.Charcoal[1]}}"><br><p>{{experience.Charcoal[2]}}</p><br><br>
-        <h5>{{experience.Acrylic[0]}}</h5><br><img src="{{experience.Acrylic[1]}}"><br><p>{{experience.Acrylic[2]}}</p><br><br>
-        <h5>{{experience.Oil[0]}}</h5><br><img src="{{experience.Oil[1]}}"><br><p>{{experience.Oil[2]}}</p><br><br>
+
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.HTML[1]}}" class="card-img-top img-fluid" alt="HTML 5 Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.HTML[0]}}</h5>
+        <p class="card-text">{{experience.HTML[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.CSS[1]}}" class="card-img-top img-fluid" alt="CSS3 Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.CSS[0]}}</h5>
+        <p class="card-text">{{experience.CSS[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Javascript[1]}}" class="card-img-top img-fluid" alt="Javascript Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Javascript[0]}}</h5>
+        <p class="card-text">{{experience.Javascript[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Python[1]}}" class="card-img-top img-fluid" alt="Python Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Python[0]}}</h5>
+        <p class="card-text">{{experience.Python[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.MongoDB[1]}}" class="card-img-top img-fluid" alt="MongoDB Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.MongoDB[0]}}</h5>
+        <p class="card-text">{{experience.MongoDB[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.GitHub[1]}}" class="card-img-top img-fluid" alt="GitHub Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.GitHub[0]}}</h5>
+        <p class="card-text">{{experience.GitHub[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Photoshop_CS6[1]}}" class="card-img-top img-fluid" alt="Photoshop_CS6 Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Photoshop_CS6[0]}}</h5>
+        <p class="card-text">{{experience.Photoshop_CS6[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Microsoft_Office[1]}}" class="card-img-top img-fluid" alt="Microsoft_Office Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Microsoft_Office[0]}}</h5>
+        <p class="card-text">{{experience.Microsoft_Office[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Linux[1]}}" class="card-img-top img-fluid" alt="Linux Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Linux[0]}}</h5>
+        <p class="card-text">{{experience.Linux[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Slack[1]}}" class="card-img-top img-fluid" alt="Slack Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Slack[0]}}</h5>
+        <p class="card-text">{{experience.Slack[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Pastels[1]}}" class="card-img-top img-fluid" alt="Pastels Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Pastels[0]}}</h5>
+        <p class="card-text">{{experience.Pastels[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Charcoal[1]}}" class="card-img-top img-fluid" alt="Charcoal Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Charcoal[0]}}</h5>
+        <p class="card-text">{{experience.Charcoal[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Acrylic[1]}}" class="card-img-top img-fluid" alt="Acrylic Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Acrylic[0]}}</h5>
+        <p class="card-text">{{experience.Acrylic[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="{{experience.Oil[1]}}" class="card-img-top img-fluid" alt="Oil Logo">
+    <div class="card-body">
+        <h5 class="card-title">{{experience.Oil[0]}}</h5>
+        <p class="card-text">{{experience.Oil[2]}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
     {% endfor %}
 {% endblock %}
+
+</section>
