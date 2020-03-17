@@ -137,13 +137,14 @@ body {
 /* End of Timeline styling */
 
 .card {
-    border: 1px sold #474e5d;
     width: 10rem;
 }
-.card-img-top {
-    max-width: 50px;
+.card-img {
+    max-height: 50px;
 }
-.icons {
-    width: 90%;
+
+.logos {
+    background: #ffffff;
+    width: 80%;
     margin: 0 auto;
 }
