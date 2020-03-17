@@ -138,4 +138,12 @@ body {
 
 .card {
     border: 1px sold #474e5d;
+    width: 10rem;
+}
+.card-img-top {
+    max-width: 50px;
+}
+.icons {
+    width: 90%;
+    margin: 0 auto;
 }
