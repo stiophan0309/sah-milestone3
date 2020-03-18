@@ -140,11 +140,20 @@ body {
     width: 10rem;
 }
 .card-img {
-    max-height: 50px;
+    max-height: 60px;
 }
 
 .logos {
     background: #ffffff;
     width: 80%;
     margin: 0 auto;
+}
+i {
+    font-size: 8rem;
+
+}
+.3d {
+    color: #222;
+    text-shadow: 0px 2px 3px #555;
+
 }
