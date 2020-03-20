@@ -14,133 +14,26 @@
 
 
 {% for experience in skills %}
-    <div class="row logos">
 
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <i class="{{experience.HTML[1]}}"></i>
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.HTML[0]}}</h5>
-                    <p class="card-text">{{experience.HTML[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.CSS[1]}}" class="card-img img-fluid" alt="CSS3 Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.CSS[0]}}</h5>
-                    <p class="card-text">{{experience.CSS[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Javascript[1]}}" class="card-img img-fluid" alt="Javascript Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Javascript[0]}}</h5>
-                    <p class="card-text">{{experience.Javascript[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Python[1]}}" class="card-img img-fluid" alt="Python Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Python[0]}}</h5>
-                    <p class="card-text">{{experience.Python[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.MongoDB[1]}}" class="card-img img-fluid" alt="MongoDB Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.MongoDB[0]}}</h5>
-                    <p class="card-text">{{experience.MongoDB[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.GitHub[1]}}" class="card-img img-fluid" alt="GitHub Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.GitHub[0]}}</h5>
-                    <p class="card-text">{{experience.GitHub[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Photoshop_CS6[1]}}" class="card-img img-fluid" alt="Photoshop_CS6 Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Photoshop_CS6[0]}}</h5>
-                    <p class="card-text">{{experience.Photoshop_CS6[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Microsoft_Office[1]}}" class="card-img img-fluid" alt="Microsoft_Office Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Microsoft_Office[0]}}</h5>
-                    <p class="card-text">{{experience.Microsoft_Office[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Linux[1]}}" class="card-img img-fluid" alt="Linux Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Linux[0]}}</h5>
-                    <p class="card-text">{{experience.Linux[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 col-sm-12">
-            <div class="card bg-transparent" style="width: 18rem;">
-                <img src="{{experience.Slack[1]}}" class="card-img img-fluid" alt="Slack Logo">
-                <div class="card-body">
-                    <h5 class="card-title">{{experience.Slack[0]}}</h5>
-                    <p class="card-text">{{experience.Slack[2]}}</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-   
 <div class="row">
-<div class="col-sm-12">
+<div class="icons">
 
-<i class="devicon-github-plain colored 3d"></i>
-<i class="devicon-bootstrap-plain colored"></i>
-<i class="devicon-css3-plain-wordmark colored"></i>
-<i class="devicon-d3js-plain colored"></i>
-<i class="devicon-html5-plain-wordmark colored"></i>
-<i class="devicon-javascript-plain colored"></i>
-<i class="devicon-linux-plain colored"></i>
-<i class="devicon-mongodb-plain colored"></i>
-<i class="devicon-photoshop-plain colored"></i>
-<i class="devicon-python-plain colored"></i>
-<i class="devicon-slack-plain colored"></i>
-<i class="devicon-heroku-original colored"></i>
-</div>
+<i class="{{experience.HTML[1]}}"></i>
+<i class="{{experience.CSS[1]}}"></i>
+<i class="{{experience.Javascript[1]}}"></i>
+<i class="{{experience.Python[1]}}"></i>
+<i class="{{experience.MongoDB[1]}}"></i>
+<i class="{{experience.Photoshop_CS6[1]}}"></i>
+<i class="{{experience.GitHub[1]}}"></i>
+<i class="{{experience.Microsoft_Office[1]}}"></i>
+<i class="{{experience.Linux[1]}}"></i>
+<i class="{{experience.Slack[1]}}"></i>
+<i class="{{experience.D3[1]}}"></i>
+<i class="{{experience.Bootstrap[1]}}"></i>
+<i class="{{experience.Heroku[1]}}"></i>
+<i class="{{experience.Macos[1]}}"></i>
+<i class="{{experience.Windows[1]}}"></i>
+
 
 </div>
 

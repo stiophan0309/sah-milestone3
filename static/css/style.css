@@ -136,24 +136,13 @@ body {
 
 /* End of Timeline styling */
 
-.card {
-    width: 10rem;
-}
-.card-img {
-    max-height: 60px;
-}
-
-.logos {
+.icons {
     background: #ffffff;
     width: 80%;
     margin: 0 auto;
 }
 i {
     font-size: 8rem;
-
-}
-.3d {
-    color: #222;
-    text-shadow: 0px 2px 3px #555;
-
+    color: #222 !important;
+    text-shadow: 0px 2px 3px #555 !important;
 }
