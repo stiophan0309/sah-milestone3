@@ -32,14 +32,28 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">HTML</h5> 
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span></button><br>
-                                <h7>{{experience.HTML[2]}}</h7>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-10">
+                                            <h5 class="modal-title" id="exampleModalLabel">HTML</h5>
+                                            <h7>{{experience.HTML[2]}}</h7>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-body">
-                                <p>I started learning HTML when my previous employer was looking for a paperless solution to create a reference manual for staff to look up
-                                accessibility information at railway stations.  Then web pages were largely static woth little or no user interaction, but a lot has changed and now HTML can interact with a lot of different technologies and programming languages to give a much better user experience.</p>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>I started learning HTML when my previous employer was looking for a paperless solution to create a reference manual for staff to look up
+                                            accessibility information at railway stations.  Then web pages were largely static woth little or no user interaction, but a lot has changed and now HTML can interact with a lot of different technologies and programming languages to give a much better user experience.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
