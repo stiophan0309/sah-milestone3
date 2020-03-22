@@ -142,7 +142,7 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
-i {
+.tech-icon {
     display: inline-block;
     font-size: 8rem;
     color: #222 !important;
@@ -153,6 +153,7 @@ i {
     font-size-adjust: 0.58;
 }
 .modal-icon {
+    color: #222 !important;
     font-size: 3em !important;
     padding: 0px
     
@@ -160,4 +161,7 @@ i {
 .modal-left {
     padding-left: 0px;
     padding-right: 10px;
+}
+.modal-header, .modal-footer {
+    background-color: #ccc;
 }
