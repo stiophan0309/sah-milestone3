@@ -2,6 +2,12 @@ body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
 }
+.page-title {
+    margin-bottom: 30px;
+}
+.education-info {
+    margin-bottom: 30px;
+}
 
 /* Timeline styling source: W3C Schools */
 * {
