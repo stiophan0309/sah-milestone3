@@ -108,6 +108,12 @@ body {
   position: relative;
   border-radius: 6px;
 }
+.work {
+    border-bottom: 5px solid #0cc;
+}
+.qual {
+    border-bottom: 5px solid #0a0;
+}
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
