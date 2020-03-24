@@ -8,6 +8,9 @@ body {
 .info {
     margin: 30px 0px 30px 0px;
 }
+.intro {
+    margin: 0 auto;
+}
 
 /* Timeline styling source: W3C Schools */
 * {
@@ -17,10 +20,11 @@ body {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  max-width: 1200px;
+  /*max-width: 1400px;*/
   margin: 0 auto;
   border: 1px solid #fff;
   margin-bottom: 50px;
+  padding: 30px 0px 50px 0px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -33,7 +37,7 @@ body {
   bottom: 0;
   left: 50%;
   margin-left: -3px;
-  border: 1px solid #fff;
+  border: 1px solid #0f0;
 }
 
 /* event around content */
