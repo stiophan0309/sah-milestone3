@@ -273,3 +273,7 @@ nav ul li a:hover {
     border: 1px solid #0a0;
     margin: 20px;
 }
+
+#create {
+    display: none;
+}
