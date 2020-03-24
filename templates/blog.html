@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Education {% endblock %}
+
+{% block content %}
+
+{% for blog in entry %}
+
+<div class="blog-post">
+<strong>{{blog.blog_title}}</strong>
+<p>{{blog.blog_content}}</p>
+</div>
+
+
+
+{% endfor %}
+{% endblock %}
