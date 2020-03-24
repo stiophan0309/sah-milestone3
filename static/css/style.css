@@ -10,6 +10,7 @@ body {
 }
 .intro {
     margin: 0 auto;
+    width: 80%;
 }
 
 /* Navbar */
@@ -55,7 +56,7 @@ nav ul li a:hover {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  /*max-width: 1400px;*/
+  width: 80%;
   margin: 0 auto;
   border: 1px solid #fff;
   margin-bottom: 50px;
@@ -196,6 +197,7 @@ nav ul li a:hover {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 3px 2px 3px 3px rgba(255,255,255,.2) !important;
 }
 .tech-icon {
     display: inline-block;
