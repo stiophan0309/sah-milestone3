@@ -3,34 +3,46 @@
 
 {% block content %}
 
-<h3>Admin Page</h3>
+<section class="container-fluid">
+    <div class="row">
 
-<button onclick="createBlog()">Create Blog Post</button>
-<button onclick="editBlog()">Edit Blog Post</button>
-<button onclick="deleteBlog()">Delete Blog Post</button>
+        <div class="col-sm-12">
+            <h3>Admin Page</h3>
+        </div>
 
-<div id="create">
-    <form action="{{ url_for('insert_blog') }}" method="POST" class="col s12">
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">poll</i>
-                <input id="blog_title" name="blog_title" type="text" class="validate">
-                <label for="blog_title">Post Title</label>
-            </div>
+        <div class="col-sm-12">
+            <button class="btn btn-primary" onclick="createBlog()">Create Blog Post</button>
+            <button class="btn btn-primary" onclick="editBlog()">Edit Blog Post</button>
+            <button class="btn btn-primary" onclick="deleteBlog()">Delete Blog Post</button>
         </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">poll</i>
-                <input id="blog_content" name="blog_content" type="text" class="validate">
-                <label for="blog_content">Post Content</label>
-            </div>
+
+    </div>
+
+    <div class="row">
+
+        <div id="create">
+            <form action="{{ url_for('insert_blog') }}" method="POST" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="blog_title">New Post Title</label>
+                        <input id="blog_title" name="blog_title" type="text" class="form-control" placeholder="Enter Post Title" required/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="blog_content">Post Content</label>
+                        <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" placeholder="Enter your post" required></textarea>  
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-secondary" type="submit">Add Post
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Add Task
-                <i class="material-icons right">playlist_add</i>
-            </button>
-        </div>
-    </form>
-</div>
+
+    </div>
+
+</section>
 
 {% endblock %}
