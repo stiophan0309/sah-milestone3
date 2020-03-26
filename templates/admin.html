@@ -4,24 +4,35 @@
 {% block content %}
 
 <section class="container-fluid">
-    <div class="row">
+    <div class="row admin-control">
 
-        <div class="col-sm-12">
+        <div class="col-sm-12 admin-title">
             <h3>Admin Page</h3>
+            <p>Please choose from one of the following options:</p>
+        </div>
+
+        <div class="col-sm-12 admin-buttons">
+            <button class="btn btn-primary admin-button" onclick="createBlog()">Create Blog Post</button>
+            <button class="btn btn-primary admin-button" onclick="editBlog()">Edit Blog Post</button>
+            <button class="btn btn-primary admin-button" onclick="deleteBlog()">Delete Blog Post</button>
         </div>
 
         <div class="col-sm-12">
-            <button class="btn btn-primary" onclick="createBlog()">Create Blog Post</button>
-            <button class="btn btn-primary" onclick="editBlog()">Edit Blog Post</button>
-            <button class="btn btn-primary" onclick="deleteBlog()">Delete Blog Post</button>
+            <p>Please NOTE that once posts have been edited or deleted changes <strong>CANNOT</strong> be undone</p>
         </div>
+
 
     </div>
 
-    <div class="row">
+    <div class="row admin-control" id="create">
 
-        <div id="create">
+        <div class="col-sm-12">
             <form action="{{ url_for('insert_blog') }}" method="POST" class="col s12">
+                <div class="row">
+                    <div class="col-sm-12 admin-function">
+                       <h5>Create New Blog Post</h5>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <label for="blog_title">New Post Title</label>
@@ -35,7 +46,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button class="btn btn-secondary" type="submit">Add Post
+                    <button class="btn btn-secondary submit-button" type="submit">Add Post
                     </button>
                 </div>
             </form>

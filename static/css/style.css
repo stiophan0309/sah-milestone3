@@ -277,3 +277,36 @@ nav ul li a:hover {
 #create {
     display: none;
 }
+
+/* Admin Page */
+
+.admin-title {
+    margin-top: 20px;
+}
+
+.admin-control {
+    border: 1px solid #0cf;
+    border-radius: 10px;
+    margin: 30px 20px 0px 20px;
+    padding-bottom: 30px;
+}
+
+.admin-buttons {
+    padding-bottom: 20px;
+}
+
+.admin-button {
+    margin: 0px 10px 10px 0px;
+}
+
+.submit-button {
+    margin: 10px 0px 0px 15px;
+}
+
+.admin-function {
+    margin: 20px 0px 20px 0px;
+
+}
+label {
+     margin-top: 10px;
+ }
