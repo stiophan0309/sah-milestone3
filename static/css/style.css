@@ -277,6 +277,9 @@ nav ul li a:hover {
 #create {
     display: none;
 }
+#edit{
+    display: none;
+}
 
 /* Admin Page */
 

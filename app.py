@@ -41,6 +41,22 @@ def insert_blog():
     blog.insert_one(request.form.to_dict())
     return redirect(url_for('blog'))
 
+@app.route('/edit_blog/<blog_id>')
+def edit_blog(blog_id):
+    the_blog = mongo.db.blog.find_one({"_id": ObjectId(blog_id)})
+    return render_template('editblog.html', blog=the_blog)
+
+@app.route('/update_blog/<blog_id>', methods=["POST"])
+def update_blog(blog_id):
+    blogs = mongo.db.blogs
+    blogs.update( {'_id': ObjectId(blog_id)},
+    {
+        'blog_title':request.form.get('blog_title'),
+        'blog_content':request.form.get('blog_content'),
+
+    })
+    return redirect(url_for('blog'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP','0.0.0.0'),
