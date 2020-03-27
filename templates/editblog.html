@@ -4,14 +4,17 @@
 {% block content %}
 
 {% for blog in entry %}
-<form action="{{ url_for('update_blog', blog_id=blog._id) }}" method="POST">
-<div class="blog-post">
-<input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}">
-<textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" required></textarea>
+<div class="row admin-control">
+<div class="col-sm-12 blog-post">
+    <form action="{{ url_for('update_blog', blog_id=blog._id) }}" method="POST">
+
+        <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
+        <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}" required></textarea>
+        <button class="btn btn-warning admin-button" type="submit" name="action">Edit Post</button>
+
+    </form>
 </div>
-        <button class="btn btn-warning admin-button" type="submit" name="action">Edit Task
-        </button>
-</form>
+</div>
 
 
 
