@@ -55,6 +55,11 @@ def update_blog(blog_id):
     })
     return redirect(url_for('blog'))
 
+@app.route('/delete_blog/<blog_id>')
+def delete_blog(blog_id):
+    mongo.db.blogs.remove({'_id': ObjectId(blog_id)})
+    return redirect(url_for('blog'))
+
 
 
 if __name__ == '__main__':
