@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Gotu|Play&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu|Play|Cinzel&display=swap');
 
 body {
     height: 100%;
@@ -47,18 +47,34 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     border-radius: 10px;
 }
 /* Base.html Title area */
+.wrapper {
+
+    height: 80%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 3px rgba(255,255,255,0.5), inset 2px 2px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+
+}
 .splash {
     width: 75vw;
     height: 75vh;
     background-color: #ccc;
     padding: 30px;
     border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.7), inset 2px 2px 5px 0px rgba(255,255,255,0.75), -5px -7px 18px 3px rgba(0,0,0,0.4), 6px 6px 18px 13px rgba(0,0,0,0.4), 
+    inset -3px -3px 10px 5px rgba(102,102,102,1);
+    -moz-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.7), inset 2px 2px 5px 0px rgba(255,255,255,255.75), -5px -7px 18px 3px rgba(0,0,0,0.4), 6px 6px 18px 13px rgba(0,0,0,0.4), 
+    inset -3px -3px 10px 5px rgba(102,102,102,1);
+    box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.7), inset 2px 2px 5px 0px rgba(255,255,255,255.75), -5px -7px 18px 3px rgba(0,0,0,0.4), 6px 6px 18px 13px rgba(0,0,0,0.4), 
+    inset -3px -3px 10px 5px rgba(102,102,102,1);
 }
 #title1 {
     text-align: left;
     width: 100%;
     background-color: #565656;
-    font-family: 'Play', sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: bold;
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
@@ -69,7 +85,7 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 #title2 {
     text-align: center;
     background-color: #565656;
-    font-family: 'Play', sans-serif;
+    font-family: 'Cinzel', serif;
   color: transparent;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
   -webkit-background-clip: text;
@@ -79,7 +95,7 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 #title3 {
     text-align: center;
     background-color: #565656;
-    font-family: 'Play', sans-serif;
+    font-family: 'Cinzel', serif;
   color: transparent;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
   -webkit-background-clip: text;
@@ -89,7 +105,7 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 #title4 {
     text-align: right;
     background-color: #565656;
-    font-family: 'Play', sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: bold;
   color: transparent;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
