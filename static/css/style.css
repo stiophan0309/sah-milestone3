@@ -2,7 +2,7 @@
 
 body {
     height: 100%;
-    background-color: #474e5d;
+    /*background-color: #474e5d;*/
 }
 .page-title {
     margin-bottom: 30px;
@@ -60,7 +60,7 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 .splash {
     width: 75vw;
     height: 75vh;
-    background-color: #ccc;
+    /*background-color: #ccc;*/
     padding: 30px;
     border-radius: 10px;
     -webkit-box-shadow: 2px 2px 5px 3px rgba(0,0,0,0.7), inset 2px 2px 5px 0px rgba(255,255,255,0.75), -5px -7px 18px 3px rgba(0,0,0,0.4), 6px 6px 18px 13px rgba(0,0,0,0.4), 
@@ -335,4 +335,9 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 }
 label {
      margin-top: 10px;
+ }
+ footer {
+     background-color: #009688;
+     margin-top: 50px;
+     border-top: 1px solid #fff;
  }
