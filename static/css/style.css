@@ -32,7 +32,7 @@ body {
     margin-bottom: 30px;
 }
 .intro h3 {
-    font-family: 'Michroma', sans;
+    font-family: 'Michroma', sans-serif;
     color: #009688;
     text-shadow: 0.5px 0.5px 0px #000;
     margin-bottom: 20px;
@@ -50,7 +50,7 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     text-decoration: none;
 }
 .navbar-link {
-    font-family: 'Gotu', sans-serif;
+    font-family: 'Michroma', sans-serif;
     font-size: 1.5em;
     display: inline-block;
     text-decoration: none;
@@ -58,10 +58,13 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     height: 100% !important;
     margin-left: 30px;
     padding: 10px 20px 10px 20px;
+    text-shadow: 1px 1px 0px #000;
 }
 .navbar-link:hover {
     text-decoration: none;
     color: #000 !important;
+    text-shadow: 0.5px 0.5px 0px #fff;
+}
     -webkit-box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
     box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
