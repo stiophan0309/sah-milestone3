@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Gotu|Play|Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu|Play|Michroma|Raleway&display=swap');
+
+html, body {
+    font-size: 16px;
+    font-family: 'Raleway', sans;
+}
 
 body {
     height: 100%;
@@ -23,6 +28,14 @@ body {
 .intro {
     margin: 0 auto;
     width: 80%;
+    color: #cae1e7;
+    margin-bottom: 30px;
+}
+.intro h3 {
+    font-family: 'Michroma', sans;
+    color: #009688;
+    text-shadow: 0.5px 0.5px 0px #000;
+    margin-bottom: 20px;
 }
 
 /* Navbar */
