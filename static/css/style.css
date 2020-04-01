@@ -218,6 +218,9 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     letter-spacing: normal;
     font-size-adjust: 0.58;
 }
+.tech-icon:hover {
+    color: #009688 !important;
+}
 .modal-icon {
     color: #222 !important;
     font-size: 3em !important;
@@ -229,7 +232,23 @@ box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     padding-right: 10px;
 }
 .modal-header, .modal-footer {
-    background-color: #ccc;
+    background-color: #009688;
+}
+.modal-body {
+    background-color: #B2DFDB;
+    border-top: 1px solid #0ff;
+    border-bottom: 1px solid #0ff;
+}
+.modal-title {
+    text-shadow: 0.25px 0.25px 0px #B2DFDB;
+}
+.modal-button {
+    background-color: #00897B !important;
+    border: 1px solid #005539 !important;
+}
+.modal-button:hover {
+    background-color: #64ffda !important;
+    border: 1px solid #fff !important;
 }
 
 /* Blog.html */
