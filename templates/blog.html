@@ -5,12 +5,20 @@
 
 {% for blog in entry %}
 
-<div class="blog-post">
-<strong>{{blog.blog_title}}</strong>
-<p>{{blog.blog_content}}</p>
-</div>
-
-
+<section class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="blog-post">
+                <div class="blog-title">
+                    <strong>{{blog.blog_title}}</strong>
+                </div>
+                <div class="blog-content">
+                    <p>{{blog.blog_content}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endfor %}
 {% endblock %}
