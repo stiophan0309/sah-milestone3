@@ -34,9 +34,27 @@ body {
     margin-bottom: 20px;
 }
 .main-content {
+    background: 
+  /* On "top" */
+  repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    #009688 10px,
+    #009688 20px
+  ),
+  /* on "bottom" */
+  linear-gradient(
+    to bottom,
+    #4DB6AC,
+    #009688,
+    #4DB6AC
+  );
+    -webkit-box-shadow: -4px -4px 7px 0px rgba(0,105,92,1), 4px 4px 7px 0px rgba(255,255,255,1);
+    -moz-box-shadow: -4px -4px 7px 0px rgba(0,105,92,1), 4px 4px 7px 0px rgba(255,255,255,1);
+    box-shadow: -4px -4px 7px 0px rgba(0,105,92,1), 4px 4px 7px 0px rgba(255,255,255,1);
     width: 90%;
     margin: 0 auto;
-    border: 1px solid #0cc;
     padding: 20px;
 }
 
@@ -58,6 +76,7 @@ body {
 
 /* Navbar */
 nav {
+    width: 100%;
     margin-bottom: 20px;
 background: rgb(0,0,0);
 background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,77,64,1) 24%, rgba(0,191,165,1) 82%, rgba(29,233,182,1) 99%);
