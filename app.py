@@ -14,6 +14,11 @@ def home():
     # Open Home page
     return render_template("base.html")
 
+@app.route("/index")
+def index():
+    # Open Home page
+    return render_template("index.html")
+
 @app.route("/contact")
 def contact():
     # Open Contact page
