@@ -3,7 +3,7 @@
 
 {% block content %}
 
-{% for blog in entry %}
+{% for blog in my_blog %}
 <div class="row admin-control">
 <div class="col-sm-12 blog-post">
     <form action="{{ url_for('update', blog_id=blog._id) }}" method="POST">

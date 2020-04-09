@@ -30,11 +30,11 @@ def get_skills():
 
 @app.route('/experience')
 def experience():
-    return render_template("experience.html", skills=mongo.db.experience.find())
+    return render_template("experience.html", my_experience=mongo.db.experience.find())
 
 @app.route('/education')
 def education():
-    return render_template("education.html", skills=mongo.db.education.find())
+    return render_template("education.html", my_education=mongo.db.education.find())
 
 @app.route('/admin')
 def admin():
@@ -43,7 +43,7 @@ def admin():
 
 @app.route('/blog')
 def blog():
-    return render_template("blog.html", entry=mongo.db.blog.find())
+    return render_template("blog.html", my_blog=mongo.db.blog.find())
 
 @app.route('/blog/add', methods=['POST'])
 def add ():
@@ -54,7 +54,7 @@ def add ():
 @app.route('/blog/edit')
 def edit():
     return render_template("editblog.html",
-    entry=mongo.db.blog.find())
+    my_blog=mongo.db.blog.find())
 
 @app.route('/blog/update/<blog_id>', methods=['POST'])
 def update(blog_id):
