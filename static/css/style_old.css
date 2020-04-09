@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Gotu|Play|Michroma|Raleway|Alegreya+Sans+SC:wght@300&display=swap');
+
+html, body {
+    font-size: 16px;
+    font-family: 'Raleway', sans;
+}
+
+body {
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(at right, rgba(0,0,0,1) 0%, rgba(71,78,93,1) 70%);    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.outer {
+    width: 100%;
+    margin: 30px 0px 0px 0px;   
+}
+.outer h1 {
+    margin: 0px 0px -17px 50px;
+    color: #009688;
+    font-size: 3.5em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-shadow: 2px 0px 0px #000;
+}
+.inner{
+    width: 100%;
+    background-color: #009688;
+    margin-left: 50px;
+}
+.inner h3 {
+    margin: 0px 20px 20px 20px;
+    padding-top: 20px;
+}
+.main-content {
+    margin: 20px 0px 20px 70px;
+    background-color:aquamarine;
+    padding: 20px 0px 20px 20px;
+}
+.main-content h5 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.other-content {
+    padding: 20px 0px 50px 0px;
+}
+#signature {
+    font-family: 'Times New Roman', 'Times', serif;
+	font-size: 100pt;
+	text-align: center;
+	color: #009688;
+	text-shadow: 0px -2px 0px rgba(0,20,20,0.5), 2px 2px 4px #eee;
+}
+
+.info {
+    margin: 30px 0px 30px 0px;
+}
+.intro {
+    margin: 0 auto;
+    width: 80%;
+    color: #cae1e7;
+    margin-bottom: 30px;
+}
+.intro h3 {
+    font-family: 'Michroma', sans-serif;
+    color: #009688;
+    text-shadow: 0.5px 0.5px 0px #000;
+    margin-bottom: 20px;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,77,64,1) 24%, rgba(0,191,165,1) 82%, rgba(29,233,182,1) 99%);
+-moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
+box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
+}
+
+.navbar-list-item {
+    text-decoration: none;
+}
+.navbar-link {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5em;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff !important;
+    height: 100% !important;
+    margin-left: 30px;
+    padding: 10px 20px 10px 20px;
+    text-shadow: 1px 1px 0px #000;
+}
+.navbar-link:hover {
+    text-decoration: none;
+    color: #000 !important;
+    text-shadow: 0.5px 0.5px 0px #fff;
+}
+    -webkit-box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 1px 2px 10px 3px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+/* Base.html Main Content */
+
+
+/* Timeline styling source: W3C Schools */
+* {
+  box-sizing: border-box;
+}
+/* Education Page */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  margin-bottom: 50px;
+  padding: 30px 0px 50px 0px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border: 1px solid #0f0;
+}
+
+/* event around content */
+.event {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.event::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #333;
+  border: 4px solid #00ff00;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the event to the left */
+.left {
+  left: 0;
+}
+
+/* Place the event to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left event (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right event (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for events on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.work {
+    border-bottom: 5px solid #0cc;
+}
+.qual {
+    border-bottom: 5px solid #0a0;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width events */
+  .event {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .event::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .event::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right events behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+/* End of Timeline styling */
+
+/* experience.html */
+
+.icons {
+    background: inherit;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 3px 2px 3px 3px rgba(255,255,255,.2) !important;
+}
+.tech-icon {
+    display: inline-block;
+    font-size: 8rem;
+    color: rgba(0,0,0,.6) !important;
+    text-shadow: 3px 2px 3px rgba(255,255,255,.2) !important;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    letter-spacing: normal;
+    font-size-adjust: 0.58;
+}
+.tech-icon:hover {
+    color: #009688 !important;
+}
+.modal-icon {
+    color: #222 !important;
+    font-size: 3em !important;
+    padding: 0px
+    
+}
+.modal-left {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+.modal-header, .modal-footer {
+    background-color: #009688;
+}
+.modal-body {
+    background-color: #B2DFDB;
+    border-top: 1px solid #0ff;
+    border-bottom: 1px solid #0ff;
+}
+.modal-title {
+    text-shadow: 0.25px 0.25px 0px #B2DFDB;
+}
+.modal-button {
+    background-color: #00897B !important;
+    border: 1px solid #005539 !important;
+}
+.modal-button:hover {
+    background-color: #64ffda !important;
+    border: 1px solid #fff !important;
+}
+
+/* Blog.html */
+
+.blog-post {
+    width: 80%;
+    border: 1px solid #009688;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #ccc;
+    overflow: hidden;
+    -webkit-box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 9px 2px rgba(0,0,0,0.5);
+}
+.blog-title {
+    background-color: #009688;
+    color: #000;
+    padding: 10px;
+    font-size: 1.25em;
+}
+.blog-content {
+    padding: 10px;
+}
+
+#create {
+    display: none;
+}
+#edit{
+    display: none;
+}
+
+/* Admin Page */
+
+.admin-title {
+    margin-top: 20px;
+}
+
+.admin-control {
+    border: 1px solid #0cf;
+    border-radius: 10px;
+    margin: 30px 20px 0px 20px;
+    padding-bottom: 30px;
+}
+
+.admin-buttons {
+    padding-bottom: 20px;
+}
+
+.admin-button {
+    margin: 0px 10px 10px 0px;
+}
+
+.submit-button {
+    margin: 10px 0px 0px 15px;
+}
+
+.admin-function {
+    margin: 20px 0px 20px 0px;
+
+}
+label {
+     margin-top: 10px;
+ }
+ footer {
+     background-color: #009688;
+     margin-top: 70px;
+     border-top: 1px solid #fff;
+ }
+
+ /* Contact Page */
+
+
+ .center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+ input, textarea {
+     margin-bottom: 10px;
+ }
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #009688;
+    color: #fafafa;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px) {
+
+    .inner {
+        position: absolute;
+        right: 0;
+        left: 10px;
+        background-color: #009688;
+        margin-left: 10px;
+        padding: 20px 40px 100px 20px;
+        }
+}
