@@ -24,10 +24,6 @@ def contact():
     # Open Contact page
     return render_template("contact.html")
 
-@app.route('/get_skills')
-def get_skills():
-    return render_template("skills.html", skills=mongo.db.skills.find())
-
 @app.route('/experience')
 def experience():
     return render_template("experience.html", my_experience=mongo.db.experience.find())

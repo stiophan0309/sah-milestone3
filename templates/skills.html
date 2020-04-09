@@ -1,9 +1,0 @@
-{% extends 'base.html' %}
-{% block title %} Skills {% endblock %}
-
-{% block content %}
-    {% for skill in skills %}
-        <h5>HTML:</h5> {{skill.HTML}} <br><br>
-        <h5>CSS:</h5> {{skill.CSS}}
-    {% endfor %}
-{% endblock %}
