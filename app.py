@@ -36,28 +36,28 @@ def experience():
 def education():
     return render_template("education.html", skills=mongo.db.education.find())
 
-@app.route('/blog')
-def blog():
-    return render_template("blog.html", entry=mongo.db.blog.find())
-
 @app.route('/admin')
 def admin():
     return render_template("admin.html",
     blog=mongo.db.blog.find())
 
-@app.route('/insert_blog', methods=['POST'])
-def insert_blog():
+@app.route('/blog')
+def blog():
+    return render_template("blog.html", entry=mongo.db.blog.find())
+
+@app.route('/blog/add', methods=['POST'])
+def add ():
     blog = mongo.db.blog
     blog.insert_one(request.form.to_dict())
     return redirect(url_for('blog'))
 
-@app.route('/edit_blog')
-def edit_blog():
+@app.route('/blog/edit')
+def edit():
     return render_template("editblog.html",
     entry=mongo.db.blog.find())
 
-@app.route('/update_blog/<blog_id>', methods=['POST'])
-def update_blog(blog_id):
+@app.route('/blog/update/<blog_id>', methods=['POST'])
+def update(blog_id):
     mongo.db.blog.update(
         {'_id': ObjectId(blog_id)}, {
         'blog_title': request.form.get('blog_title'),
@@ -65,8 +65,8 @@ def update_blog(blog_id):
     })
     return redirect(url_for('blog'))
 
-@app.route('/delete_blog/<blog_id>')
-def delete_blog(blog_id):
+@app.route('/blog/delete/<blog_id>')
+def delete(blog_id):
     mongo.db.blogs.remove({'_id': ObjectId(blog_id)})
     return redirect(url_for('blog'))
 
