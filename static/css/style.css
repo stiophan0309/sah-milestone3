@@ -14,13 +14,14 @@ footer {
     background: linear-gradient(white, #eee 50%, #e4e4e4);
 }
 
+/* Index Page */
 
+
+/* Education Page */
 /* Timeline styling source: W3C Schools */
 * {
   box-sizing: border-box;
 }
-/* Education Page */
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
