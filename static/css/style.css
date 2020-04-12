@@ -5,13 +5,26 @@ body {
   display: flex;
   height: 100%;
   min-height: 100vh;
-  flex-direction: column;
+  flex-direction: column; 
 }
+
 
 footer {
     border: 1px solid #d5d4d4;
     color: inherit;
     background: linear-gradient(white, #eee 50%, #e4e4e4);
+}
+.content-bg {
+    background: url(GreenWave.png) no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-width: 100vw;
+}
+.content-wrap { 
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Index Page */
