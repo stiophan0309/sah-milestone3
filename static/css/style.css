@@ -7,7 +7,9 @@ body {
   min-height: 100vh;
   flex-direction: column; 
 }
-
+.nav-margin {
+    margin-top: 50px;
+}
 
 footer {
     border: 1px solid #d5d4d4;
