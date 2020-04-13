@@ -13,14 +13,9 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 mongo = PyMongo(app)
 
 @app.route("/")
-def home():
-    # Open Home page
-    return render_template("base.html")
-
-@app.route("/index")
 def index():
     # Open Home page
-    return render_template("index.html")
+    return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
 
 @app.route("/contact")
 def contact():
@@ -34,11 +29,6 @@ def experience():
 @app.route('/education')
 def education():
     return render_template("education.html", my_education=mongo.db.education.find())
-
-@app.route('/admin')
-def admin():
-    return render_template("admin.html",
-    blog=mongo.db.blog.find())
 
 @app.route('/blog')
 def blog():
@@ -69,7 +59,10 @@ def delete(blog_id):
     mongo.db.blogs.remove({'_id': ObjectId(blog_id)})
     return redirect(url_for('blog'))
 
-
+@app.route('/admin')
+def admin():
+    return render_template("admin.html",
+    blog=mongo.db.blog.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP','0.0.0.0'),

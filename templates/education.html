@@ -1,8 +1,4 @@
-{% extends 'base.html' %}
-{% block title %} Education {% endblock %}
 
-{% block content %}
-{% for education in my_education %}
 
 
 <section class="container-fluid info">
@@ -19,6 +15,7 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
+        {% for education in my_education %}
         
             <!-- Timeline -->
             <div class="timeline">
@@ -102,12 +99,7 @@
                 </div>
             </div>
             <!-- End of Timeline-->
-
+        {% endfor %}
         </div>
     </div>
 </section>
-
-    {% endfor %}
-{% endblock %}
-</body>
-</hml>
