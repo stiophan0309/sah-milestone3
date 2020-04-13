@@ -25,7 +25,7 @@ def index():
 @app.route("/contact")
 def contact():
     # Open Contact page
-    return render_template("contact.html")
+    return render_template("index.html")
 
 @app.route('/experience')
 def experience():
