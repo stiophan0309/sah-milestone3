@@ -17,10 +17,21 @@ footer {
     background: linear-gradient(white, #eee 50%, #e4e4e4);
 }
 .content-bg {
-    background: url(GreenWave.png) no-repeat;
+    background: url(Ben_Wyvis.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     min-width: 100vw;
+    min-height: 100vh;
+}
+.content-bg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 0;
+  background: -webkit-linear-gradient(#fff, transparent) left repeat;
+  background: linear-gradient(#fff, transparent) left repeat; 
 }
 .content-wrap { 
     width: 90%;
@@ -33,6 +44,11 @@ footer {
     margin-bottom: 1000px;
 }
 /* Index Page */
+/* Contact Page */
+
+ input, textarea {
+     margin-bottom: 10px;
+ }
 
 
 /* Education Page */
