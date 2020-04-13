@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap')
+
 html, body {
     font-size: 16px;
 }
@@ -44,6 +46,11 @@ footer {
     margin-bottom: 1000px;
 }
 /* Index Page */
+.main-title {
+    font-size: 10em;
+    font-family: 'Tangerine', cursive;
+    text-shadow: 1px 1px 0px #fff;
+}
 /* Contact Page */
 
  input, textarea {
