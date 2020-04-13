@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400|Marvel&display=swap')
 
 html, body {
     font-size: 16px;
@@ -50,7 +50,13 @@ footer {
     font-size: 10em;
     font-family: 'Tangerine', cursive;
     text-shadow: 1px 1px 0px #fff;
+    font-weight: 400;
     opacity: 1.0;
+}
+.sub-title {
+    font-family: 'Marvel', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 /* Contact Page */
 
