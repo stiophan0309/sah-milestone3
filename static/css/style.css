@@ -19,7 +19,7 @@ footer {
     background: linear-gradient(white, #eee 50%, #e4e4e4);
 }
 .content-bg {
-    background: url(Ben_Wyvis.jpg) no-repeat;
+    background: url(../img/Ben_Wyvis.jpg) no-repeat;
     background-size: cover;
     width: 100%;
     min-width: 100vw;
