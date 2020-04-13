@@ -188,4 +188,13 @@ box-shadow: 0px 3px 5px 0px rgba(46,80,112,1);
     font-family: 'Tangerine', cursive;
     text-shadow: 1px 1px 0px #fff;
     opacity: 1.0;
+    }
+    .sub-title {
+    font-size: 1.5em;
+    }
+    #title {
+        position: fixed;
+        top: 70px;
+        margin: 0 auto;
+    }
 }
