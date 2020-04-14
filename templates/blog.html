@@ -2,12 +2,12 @@
 {% block title %} Blog {% endblock %}
 
 {% block content %}
-
-<section class="container-fluid info">
+<div class="blog-wrap view">
+<section class="container-fluid">
 
     <div class="row">
         <div class="col-sm-12">
-            <div class="intro">
+            <div class="content-wrap">
                 <h3>My Blog</h3>
                 <p>Welcome to My Blog!  Here I have documented my experiences, trials and tribulations as a web designer and developer.  If you would like to contribute to my blog, 
                 please get in touch using my contact page, I would love to hear from you.</p>
@@ -20,17 +20,20 @@
 <section class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
-            <div class="blog-post">
-                <div class="blog-title">
-                    <strong>{{blog.blog_title}}</strong>
+            <div class="content-wrap">
+                <div class="blog-post">
+                    <div class="blog-title">
+                        <strong>{{blog.blog_title}}</strong>
+                    </div>
+                    <div class="blog-content">
+                        <p>{{blog.blog_content}}</p>
+                    </div>
                 </div>
-                <div class="blog-content">
-                    <p>{{blog.blog_content}}</p>
-                </div>
-            </div>
+            </div>   
         </div>
     </div>
 </section>
 
 {% endfor %}
 {% endblock %}
+</div>
