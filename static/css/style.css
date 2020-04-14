@@ -7,7 +7,9 @@ body {
   display: flex;
   height: 100%;
   min-height: 100vh;
-  flex-direction: column; 
+  flex-direction: column;
+  overflow-x: hidden;
+
 }
 .nav-margin {
     margin-top: 50px;
@@ -22,14 +24,16 @@ footer {
     background: url(../img/Ben_Wyvis.jpg) no-repeat;
     background-size: cover;
     width: 100%;
+    min-height: 99.1vh;
     min-width: 100vw;
-    min-height: 100vh;
+    overflow: hidden;
 }
 .content-bg:after {
   content: "";
   display: block;
   position: absolute;
   width: 100%;
+  min-width: 100vw;
   height: 70%;
   top: 0;
   background: -webkit-linear-gradient(#fff, transparent) left repeat;
