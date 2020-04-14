@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400|Marvel&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400|Marvel|Ubuntu&display=swap')
 
 html, body {
     font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
