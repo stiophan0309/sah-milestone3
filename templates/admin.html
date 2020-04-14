@@ -3,30 +3,38 @@
 
 {% block content %}
 
-<section class="container-fluid">
-    <div class="row admin-control">
+<section class="container-fluid view">
+    <div class="row">
 
-        <div class="col-sm-12 admin-title">
+        <div class="col-sm-12">
+            <div class="content-wrap">
             <h3>Admin Page</h3>
             <p>Please choose from one of the following options:</p>
+            </div>
         </div>
 
-        <div class="col-sm-12 admin-buttons">
+        <div class="col-sm-12">
+        <div class="content-wrap">
             <button class="btn btn-primary admin-button" onclick="createBlog()">Create Blog Post</button>
             <a class="btn btn-primary admin-button" href="{{ url_for('edit') }}">Edit</a>
             <button class="btn btn-primary admin-button" onclick="deleteBlog()">Delete Blog Post</button>
         </div>
+        </div>
 
         <div class="col-sm-12">
+        <div class="content-wrap">
             <p>Please NOTE that once posts have been edited or deleted changes <strong>CANNOT</strong> be undone</p>
+            </div>
         </div>
 
 
     </div>
 
-    <div class="row admin-control" id="create">
+    <!-- Create New Blog Post-->
+    <div class="row" id="create">
 
         <div class="col-sm-12">
+            <div class="content-wrap">
             <form action="{{ url_for('add') }}" method="POST" class="col s12">
                 <div class="row">
                     <div class="col-sm-12 admin-function">
@@ -50,6 +58,7 @@
                     </button>
                 </div>
             </form>
+        </div>
         </div>
 
     </div>
