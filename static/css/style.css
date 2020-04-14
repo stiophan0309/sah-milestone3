@@ -81,7 +81,7 @@ footer {
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 30px 0px 50px 0px;
@@ -210,6 +210,9 @@ box-shadow: 0px 3px 5px 0px rgba(46,80,112,1);
 /* Media queries - Timeline */
 @media screen and (max-width: 768px) {
   /* Place the timelime to the left */
+  .timeline {
+      width: 100%;
+  }
   .timeline::after {
   left: 31px;
   }
