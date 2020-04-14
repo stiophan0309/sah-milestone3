@@ -16,10 +16,12 @@ body {
 }
 .view {
     background-color: #fff;
+    width: 100%;
     min-width: 100vw;
     min-height: 100vh;
     position: relative;
     z-index: 999;
+    margin-top: 70px;
 }
 
 footer {
