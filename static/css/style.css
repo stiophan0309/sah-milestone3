@@ -14,6 +14,13 @@ body {
 .nav-margin {
     margin-top: 50px;
 }
+.view {
+    background-color: #fff;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    z-index: 999;
+}
 
 footer {
     border: 1px solid #d5d4d4;
@@ -45,10 +52,7 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#contact {
-    margin-top: 2000px;
-    margin-bottom: 1000px;
-}
+
 /* Index Page */
 .main-title {
     font-size: 10em;
@@ -201,4 +205,37 @@ box-shadow: 0px 3px 5px 0px rgba(46,80,112,1);
         top: 70px;
         margin: 0 auto;
     }
+}
+
+/* Media queries - Timeline */
+@media screen and (max-width: 768px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width events */
+  .event {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .event::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .event::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right events behave like the left ones */
+  .right {
+  left: 0%;
+  }
 }
