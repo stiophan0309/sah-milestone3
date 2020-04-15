@@ -20,39 +20,7 @@
         <a href="#html_modal" data-toggle="modal"><i class="{{experience.HTML[1]}} tech-icon"></i></a>
             <!-- Modal -->
             <div class="modal fade" id="html_modal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.HTML[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="htmlModalLabel">{{experience.HTML[0]}}</h5>
-                                        <h7>{{experience.HTML[2]}}</h7>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.HTML[3]}}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary modal-button" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+            {% include 'modal.html' %}
             </div>
             <!-- end of Modal -->
 
