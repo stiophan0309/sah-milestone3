@@ -64,14 +64,6 @@ def admin():
     return render_template("admin.html",
     blog=mongo.db.blog.find())
 
-@app.route("/form", methods=["GET", "POST"])
-def my_form():
-    if request.method == 'POST':
-        reply_to = request.form.get('email')
-        message = request.form.get('message')
-        # send_email(message, reply_to)
-    return render_template('contact.html')
-
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP','0.0.0.0'),
             port=int(os.environ.get('PORT','8080')),
