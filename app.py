@@ -21,15 +21,7 @@ def index():
 def contact():
     # Open Contact page
     return render_template("index.html")
-
-@app.route('/experience')
-def experience():
-    return render_template("experience.html", my_experience=mongo.db.experience.find())
-
-@app.route('/education')
-def education():
-    return render_template("education.html", my_education=mongo.db.education.find())
-
+    
 @app.route('/blog')
 def blog():
     return render_template("blog.html", my_blog=mongo.db.blog.find())
