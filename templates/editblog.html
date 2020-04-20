@@ -10,7 +10,6 @@
 
         <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
         <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}" required></textarea>
-        <input type="hidden"  id="timestamp" name="timestamp" value="{{blog.last_modifield}}">
         <button class="btn btn-warning admin-button" type="submit" name="action">Edit Post</button>
         <a href="{{url_for('delete', blog_id=blog._id)}}" class="btn btn-danger admin-button">Delete</a>
 

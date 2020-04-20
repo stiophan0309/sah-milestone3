@@ -48,7 +48,8 @@ def update(blog_id):
         {'_id': ObjectId(blog_id)}, {
         'blog_title': request.form.get('blog_title'),
         'blog_content': request.form.get('blog_content'),
-        'last_modified': datetime.datetime.utcnow()
+        'todayDate': request.form.get('startdate'),
+        'timestamp': datetime.datetime.utcnow()
     })
     return redirect(url_for('blog'))
 
