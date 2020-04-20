@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
+import datetime
 from bson.objectid import ObjectId
 from os import path
 if path.exists("env.py"):
@@ -16,6 +17,10 @@ mongo = PyMongo(app)
 def index():
     # Open Home page
     return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
+
+@app.context_processor
+def inject_today_date():
+    return {'today_date': datetime.date.today()}
 
 @app.route("/contact")
 def contact():
@@ -42,7 +47,8 @@ def update(blog_id):
     mongo.db.blog.update(
         {'_id': ObjectId(blog_id)}, {
         'blog_title': request.form.get('blog_title'),
-        'blog_content': request.form.get('blog_content')
+        'blog_content': request.form.get('blog_content'),
+        'last_modified': datetime.datetime.utcnow()
     })
     return redirect(url_for('blog'))
 
