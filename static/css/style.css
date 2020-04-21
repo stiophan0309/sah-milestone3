@@ -266,7 +266,10 @@ nav {
 #edit{
     display: none;
 }
-
+input, textarea {
+    width: 100%;
+    padding: 10px;
+}
 /* Blog Page */
 .blog-wrap {
     background: rgb(255,255,255);

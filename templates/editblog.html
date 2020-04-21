@@ -4,16 +4,39 @@
 {% block content %}
 
 {% for blog in my_blog %}
-<div class="row admin-control">
-<div class="col-sm-12 blog-post">
+<div class="blog-wrap view">
+<div class="col-sm-12">
+    <div class="content-wrap">
+    <h3>Edit or delete selected blog post</h3>
     <form action="{{ url_for('update', blog_id=blog._id) }}" method="POST">
 
-        <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
-        <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}" required></textarea>
-        <button class="btn btn-warning admin-button" type="submit" name="action">Edit Post</button>
-        <a href="{{url_for('delete', blog_id=blog._id)}}" class="btn btn-danger admin-button">Delete</a>
+        <p>Existing title: {{ blog.blog_title }}</p>
+        <p>Existing content: {{blog.blog_content}}</p>
+
+        <p>Please edit new details below and select Save Changes, or leave blank and select Delete Post as required.</p>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="blog_title">Enter New Title Below:</label><br>
+                <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
+                </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="blog_content">Enter New Content Below:</label>
+                <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <button class="btn btn-warning admin-button" type="submit" name="action">Save Changes</button>
+                <a href="{{url_for('delete', blog_id=blog._id)}}" class="btn btn-danger admin-button">Delete Post</a>
+            </div>
+        </div>
+
 
     </form>
+    </div>
 </div>
 </div>
 
