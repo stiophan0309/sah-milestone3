@@ -18,10 +18,6 @@ def index():
     # Open Home page
     return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
 
-@app.context_processor
-def inject_today_date():
-    return {'today_date': datetime.date.today()}
-
 @app.route("/contact")
 def contact():
     # Open Contact page
