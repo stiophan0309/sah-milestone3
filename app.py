@@ -51,12 +51,15 @@ def edit():
 @app.route('/blog/update/<blog_id>', methods=['POST'])
 def update(blog_id):
     mongo.db.blog.update(
-        {'_id': ObjectId(blog_id)}, {
-        'blog_title': request.form.get('blog_title'),
-        'blog_content': request.form.get('blog_content'),
-        'todayDate': request.form.get('startdate'),
-        'timestamp': datetime.datetime.utcnow()
-    })
+        {'_id': ObjectId(blog_id)}, 
+        { '$set':
+            {
+            'blog_title': request.form.get('blog_title'),
+            'blog_content': request.form.get('blog_content'),
+            'last_updated': datetime.datetime.utcnow()
+            }
+        }
+    )
     return redirect(url_for('blog'))
 
 @app.route('/blog/delete/<blog_id>')
