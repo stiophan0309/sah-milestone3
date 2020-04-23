@@ -23,16 +23,17 @@
             <div class="content-wrap">
                 <div class="blog-post">
                     <div class="blog-title">
-                        <strong>{{blog.blog_title}}</strong>
+                        <p>{{blog.blog_title}}</p>
+                        <p class="author">by {{blog.blog_author}}</p>
                     </div>
                     <div class="blog-content">
                         <p>{{blog.blog_content}}</p>
                     </div>
                     <div class="row blog-footer">
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-3">
                             <p>Created on: {{blog.date_created}}</p>
                         </div>
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-9">
                             <p>Last updated: {{blog.last_updated}}</p>
                         </div>
                     </div>

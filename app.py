@@ -38,6 +38,7 @@ def add():
     blog = mongo.db.blog
     blog.insert_one({
         "blog_title": request.form.get("blog_title"),
+        "blog_author": request.form.get("blog_author"),
         "blog_content": request.form.get("blog_content"),
         "date_created": datetime.datetime.now()
     })
@@ -64,7 +65,7 @@ def update(blog_id):
 
 @app.route('/blog/delete/<blog_id>')
 def delete(blog_id):
-    mongo.db.blogs.remove({'_id': ObjectId(blog_id)})
+    mongo.db.blog.remove({'_id': ObjectId(blog_id)})
     return redirect(url_for('blog'))
 
 @app.route('/admin')
