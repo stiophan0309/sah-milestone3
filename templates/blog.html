@@ -28,11 +28,13 @@
                     <div class="blog-content">
                         <p>{{blog.blog_content}}</p>
                     </div>
-                    <div class="blog-content">
-                        <p>{{blog.date_created}}</p>
-                    </div>
-                    <div class="blog-content">
-                        <p>{{blog.last_updated}}</p>
+                    <div class="row blog-footer">
+                        <div class="col-sm-12 col-md-6">
+                            <p>Created on: {{blog.date_created}}</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <p>Last updated: {{blog.last_updated}}</p>
+                        </div>
                     </div>
                 </div>
             </div>   
