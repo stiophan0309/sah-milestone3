@@ -6,14 +6,15 @@ html, body {
 }
 
 body {
-box-sizing: border-box;
-  display: flex;
-  height: 100%;
-  min-height: 100vh;
-  flex-direction: column;
-  overflow-x: hidden;
-  background-color: #ccc;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #ccc;
 }
+
 .nav-margin {
     margin-top: 50px;
 }
@@ -32,27 +33,29 @@ footer {
 .content-bg {
     background: url(../img/Ben_Wyvis.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
     width: 100%;
-    min-height: 99.1vh;
+    min-height: 100vh;
     min-width: 100vw;
     overflow: hidden;
 }
 .content-bg:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  min-width: 100vw;
-  height: 70%;
-  top: 0;
-  background: -webkit-linear-gradient(#fff, transparent) left repeat;
-  background: linear-gradient(#fff, transparent) left repeat; 
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-width: 100vw;
+    height: 70%;
+    top: 0;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%);
 }
 .content-wrap { 
     width: 90%;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-bottom: 20px;
+    color: #444;
 }
 
 /* Navbar */
@@ -61,7 +64,9 @@ nav {
     -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
     box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
 }
-
+#title {
+    margin-top: 250px;
+}
 /* Index Page */
 .main-title {
     font-size: 10em;
@@ -315,21 +320,42 @@ input, textarea {
 /* Media Queries */
 
 @media(max-width: 768px) {
-
+    .content-bg {
+    background: url(../img/Ben_Wyvis.jpg) no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+.content-bg:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-width: 100vw;
+    height: 30%;
+    top: 0;
+    background: rgb(125,125,125);
+    background: linear-gradient(180deg, rgba(125,125,125,1) 0%, rgba(255,255,255,0) 50%);
+}
+    .content-wrap {
+    margin-top: 50px;
+    color: rgba(0,0,0,1);
+    }
+    #title {
+    margin-top: 100px;
+}
     .main-title {
     font-size: 5em;
     font-family: 'Tangerine', cursive;
     text-shadow: 1px 1px 0px #fff;
-    opacity: 1.0;
     }
     .sub-title {
     font-size: 1.5em;
     }
-    #title {
-        position: fixed;
-        top: 70px;
-        margin: 0 auto;
-    }
+
 }
 
 /* Media queries - Timeline */
