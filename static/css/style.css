@@ -299,6 +299,18 @@ input, textarea {
     width: 100%;
     padding: 10px;
 }
+#edit-blog {
+    border: 1px solid #fff;
+    padding: 20px;
+}
+#toggle {
+    display: none;
+}
+.existing {
+    border: 1px solid #333;
+    padding: 10px 10px 30px 10px;
+    margin: 10px 0px 30px 0px;
+}
 /* Blog Page */
 .blog-wrap {
     background: rgb(255,255,255);
