@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400|Marvel|Ubuntu&display=swap')
 
+/* General styles */
+
 html, body {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
@@ -30,6 +32,14 @@ footer {
     color: inherit;
     background: linear-gradient(white, #eee 50%, #e4e4e4);
 }
+.btn-primary {
+    background: rgb(0,200,181);
+    background: linear-gradient(180deg, rgba(0,200,181,1) 0%, rgba(0,150,136,1) 50%);
+    border-color: #005539;
+    color: #fff;
+}
+
+/* Index Page */
 .content-bg {
     background: url(../img/Ben_Wyvis.jpg) no-repeat;
     background-size: cover;
@@ -231,7 +241,7 @@ nav {
     font-size-adjust: 0.58;
 }
 .tech-icon:hover {
-    color: #ccc !important;
+    color: #009688 !important;
 }
 .modal-icon {
     color: #222 !important;
@@ -264,12 +274,26 @@ nav {
 }
 
 /* Admin Page */
+.admin {
+    width: 90%;
+    border: 1px solid #fff;
+    margin: 20px auto;
+    color: #333;
+    background-color: #ccc;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,1);
 
+}
 #create {
     display: none;
 }
 #edit{
     display: none;
+}
+.input-field {
+    margin-top: 20px;
 }
 input, textarea {
     width: 100%;
