@@ -1,35 +1,57 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+##Steven A. Horne - Web Designer & Full Stack Web Developer
 
-Welcome Stìophan A. Horne,
+The site is my personal portfolio and blog.  The site will dispaly information about the the author's skills, education and read their blog page as well as contact them.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+##UX
 
-## Gitpod Reminders
+The site is intended for anyone who is interested in web design/development and/or those who are looking for assistance with a project/site.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The site bosts a simple and easy to use interface which is easy to navigate.
 
-`python3 -m http.server`
+###Admin section
 
-A blue button should appear to click: *Expose*,
+The Admin section can ONLY be accessed by adding /admin at the end on the url.  This is to prevent access to unauthorised users.
+In the Admin section, adminstrators can create, edit and delete posts in the Blog.
 
-Another blue button should appear to click: *Open Browser*.
+##User Stories
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##Wireframes
 
-A blue button should appear to click: *Expose*,
+##Features
 
-Another blue button should appear to click: *Open Browser*.
+The site utilises the CRUD (Create, Read, Update, Delete) in the Blog section.  
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+##Technologies
 
-## Updates Since The Instructional Video
+The site uses the following technologies:
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+HTML5
+CSS3
+Javascript
+Python
+Flask
+Jinja
+TinyMCE
+EmailJS
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+##Testing
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+##Deployment
 
---------
+The develpment site is located on my GitHub site at:
 
-Happy coding!
+https://github.com/stiophan0309/sah-milestone3
+
+The live site is deployed to Heroku at:
+
+https://sah-milestone3.herokuapp.com/
+
+##Credits
+
+The Timeline code was sourced from W3C schools
+
+
+
+##Media
+
+The front page image is property of the author.
