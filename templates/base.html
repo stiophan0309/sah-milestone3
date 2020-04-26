@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/spacelab/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <!-- email.js -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("user_d6qVtv5Ot59fSi1XNDbqi");
+    })();
+  </script>
+
 </head>
     
 <body>
@@ -29,23 +37,24 @@
 <script src="/static/js/show.js"></script>
 <script src="/static/js/toggle.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-   (function(){
-      emailjs.init("user_d6qVtv5Ot59fSi1XNDbqi");
-   })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                emailjs.sendForm('default_service', 'rosie', this);
-            });
-        }
-    </script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+</script>
+
+<script type="text/javascript">
+(function(){
+emailjs.init("user_d6qVtv5Ot59fSi1XNDbqi");
+})();
+</script>
+
+<script src="/static/js/sendMail.js"></script>
+ 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 
 </body>
 </html>

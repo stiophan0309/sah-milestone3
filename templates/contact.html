@@ -16,7 +16,7 @@
     <div class="col-sm-12">
         <div class="content-wrap">
             <div class="center-form">
-                <form id="contact-form" name="contact-form" method="post">
+                <form id="contactForm" name="contactForm" onsubmit="return sendMail(this);">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Name" required/>
                     <input type="text" name="email" class="form-control" id="email" placeholder="Email" required/>
                     <textarea rows="5" name="message" class="form-control" id="message" placeholder="Please enter query or comments here ..." required></textarea>
