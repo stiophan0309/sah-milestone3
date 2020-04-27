@@ -352,13 +352,16 @@ input, textarea {
     position: absolute;
     right:0;
     bottom:0;
-    margin-top: 10px;
+    margin: 10px;
+}
+.blog-content p {
+    margin-bottom: 30px;
 }
 
 .blog-footer {
     background-color: #666;
     color: #ccc;
-    margin-bottom: 0px;
+    margin: 0px 0px 0px 0px;
     padding: 10px;
 }
 
