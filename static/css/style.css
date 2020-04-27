@@ -39,7 +39,15 @@ footer {
     border-color: #005539;
     color: #fff;
 }
+/* Navbar */
 
+nav {
+    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
+}
+#title {
+    margin-top: 250px;
+}
 /* Index Page */
 .content-bg {
     background: url(../img/Ben_Wyvis.jpg) no-repeat;
@@ -68,17 +76,6 @@ footer {
     margin-bottom: 20px;
     color: #444;
 }
-
-/* Navbar */
-
-nav {
-    -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
-    box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.5);
-}
-#title {
-    margin-top: 250px;
-}
-/* Index Page */
 .main-title {
     font-size: 10em;
     font-family: 'Tangerine', cursive;
@@ -101,7 +98,6 @@ nav {
     box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,1);
  }
 
-
 /* Education Page */
 /* Timeline styling source: W3C Schools */
 * {
@@ -123,7 +119,6 @@ nav {
     box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,1); 
 }
 
-/* The actual timeline (the vertical ruler) */
 .timeline::after {
   content: '';
   position: absolute;
@@ -212,9 +207,11 @@ nav {
     -moz-box-shadow: 0px 3px 5px 0px rgba(46,80,112,1);
   box-shadow: 0px 3px 5px 0px rgba(46,80,112,1);
 }
+
 .work {
     border-bottom: 5px solid #0cc;
 }
+
 .qual {
     border-bottom: 5px solid #0a0;
 }
@@ -307,6 +304,7 @@ input, textarea {
     padding: 10px 10px 30px 10px;
     margin: 10px 0px 30px 0px;
 }
+
 /* Blog Page */
 .blog-wrap {
     background: rgb(255,255,255);
@@ -441,6 +439,7 @@ input, textarea {
   left: 0%;
   }
 }
+
 #contact, #education, #experience {
     padding: 0px;
 }
