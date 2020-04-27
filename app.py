@@ -27,12 +27,6 @@ def contact():
 def blog():
     return render_template("blog.html", my_blog=mongo.db.blog.find())
 
-#@app.route('/blog/add', methods=['POST'])
-#def add ():
-#    blog = mongo.db.blog
-#    blog.insert_one(request.form.to_dict())
-#    return redirect(url_for('blog'))
-
 @app.route('/blog/add', methods=['GET', 'POST'])
 def add():
     blog = mongo.db.blog
