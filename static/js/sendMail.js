@@ -1,3 +1,6 @@
+    (function () {
+      emailjs.init("user_d6qVtv5Ot59fSi1XNDbqi");
+    })();
 function sendMail(contactForm) {
     emailjs.send("gmail", "rosie", {
         "name": contactForm.name.value,
