@@ -17,7 +17,7 @@ The site bosts a simple and easy to use interface which is easy to navigate.  Th
 
 ### Admin section
 
-The Admin section can ONLY be accessed by adding /admin at the end on the url.  This is to prevent access to unauthorised users.
+The Admin section can ONLY be accessed by adding **/admin** at the end on the url.  This is to prevent access to unauthorised users.
 In the Admin section, adminstrators can create, edit and delete posts in the Blog.
 
 ## User Stories
@@ -25,7 +25,7 @@ In the Admin section, adminstrators can create, edit and delete posts in the Blo
 * As a potential customer I want to be able to see the developer's skills and/or work.
 * As a potential customer I want to be able to visit their website and be able to easily navigate arount and be able to contact the developer.
 * As a potential customer I want to be able to see if their own site is professionally designed and easy to use.
-* As a potantial customer I want fo find out information about the developer.
+* As a potential customer I want fo find out information about the developer.
 * As a web developer I want to compare the developer's site to my own.
 * As a web developer I want to see what the site offers and if it offers anything different.
 
