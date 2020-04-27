@@ -31,10 +31,10 @@
                     </div>
                     <div class="row blog-footer">
                         <div class="col-sm-12 col-md-3">
-                            <p>Created on: {{blog.date_created}}</p>
+                            <p>Created on: {{blog.date_created.strftime('%d-%m-%Y %H:%M')}}</p>
                         </div>
                         <div class="col-sm-12 col-md-9">
-                            <p>Last updated: {{blog.last_updated}}</p>
+                            <p>Last updated: {{blog.last_updated.strftime('%d-%m-%Y %H:%M')}}</p>
                         </div>
                     </div>
                 </div>

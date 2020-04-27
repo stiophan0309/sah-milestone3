@@ -1,4 +1,4 @@
-##Steven A. Horne - Web Designer & Full Stack Web Developer
+## Steven A. Horne - Web Designer & Full Stack Web Developer
 
 The site is my personal portfolio and blog.  The site will dispaly information about the the author's skills, education and read their blog page as well as contact them.
 
@@ -9,26 +9,26 @@ The main goals of the site are:
 * Simple and clear UX for users to navigate
 * Provide a blog to share my experiences
 
-##UX
+## UX
 
 The site is intended for anyone who is interested in web design/development and/or those who are looking for assistance with a project/site.
 
 The site bosts a simple and easy to use interface which is easy to navigate.  The site contains a front page with a Navbar which links to all other page except the **Blog Admin** page (see below).
 
-###Admin section
+### Admin section
 
 The Admin section can ONLY be accessed by adding /admin at the end on the url.  This is to prevent access to unauthorised users.
 In the Admin section, adminstrators can create, edit and delete posts in the Blog.
 
-##User Stories
+## User Stories
 
-##Wireframes
+## Wireframes
 
 Wireframe mockups can be found here
 
-##Features
+## Features
 
-###Existing Features
+### Existing Features
 
 The site is navigated by means of the Navbar from where all pages can be accessed and it remains at the top of the page when scrolling.  The user can return to the Home page by either clicking/pressing the Home link of the House icon.
 
@@ -62,9 +62,9 @@ Bootstrap
 DevIcons
 jQuery
 
-##Testing
+## Testing
 
-##Deployment
+## Deployment
 
 The development site is located on my GitHub site at:
 
@@ -74,11 +74,11 @@ The live site is deployed to Heroku at:
 
 https://sah-milestone3.herokuapp.com/
 
-##Credits
+## Credits
 
 The Timeline on the Education Page was sourced from W3C schools. Link: [https://www.w3schools.com/howto/howto_css_timeline.asp]
 
 
-##Media
+## Media
 
 The front page image is property of the author.
