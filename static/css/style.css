@@ -341,7 +341,20 @@ input, textarea {
 
 .blog-content {
     padding: 10px;
+    overflow: hidden;
+    max-height: 200px;
+    position: relative;
 }
+.blog-content.expanded {
+    max-height: none;
+}
+.read-more {
+    position: absolute;
+    right:0;
+    bottom:0;
+    margin-top: 10px;
+}
+
 .blog-footer {
     background-color: #666;
     color: #ccc;
