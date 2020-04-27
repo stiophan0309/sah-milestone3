@@ -1,13 +1,13 @@
 ## Steven A. Horne - Web Designer & Full Stack Web Developer
 
-The site is my personal portfolio and blog.  The site will dispaly information about the the author's skills, education and read their blog page as well as contact them.
+The site is the personal portfolio and blog of a web developer and designer.  The site will display information about the the author's skills, education and read their blog page as well as contact them.
 
 The main goals of the site are: 
 
-* Build an online prescence and promote service
+* Build an online prescence and promote the developer's services/brand
 * Encourage people to use the Contact Page with enquiries
 * Simple and clear UX for users to navigate
-* Provide a blog to share my experiences
+* Provide a blog to share the developer's experiences
 
 ## UX
 
@@ -22,6 +22,13 @@ In the Admin section, adminstrators can create, edit and delete posts in the Blo
 
 ## User Stories
 
+* As a potential customer I want to be able to see the developer's skills and/or work.
+* As a potential customer I want to be able to visit their website and be able to easily navigate arount and be able to contact the developer.
+* As a potential customer I want to be able to see if their own site is professionally designed and easy to use.
+* As a potantial customer I want fo find out information about the developer.
+* As a web developer I want to compare the developer's site to my own.
+* As a web developer I want to see what the site offers and if it offers anything different.
+
 ## Wireframes
 
 Wireframe mockups can be found here
@@ -34,11 +41,11 @@ The site is navigated by means of the Navbar from where all pages can be accesse
 
 The Education page utilises a timeline to visually show education/employment history and other milestones.
 
-The Exoperience page displays a list of icons of various technologies/software which the designer has experience.  The user can click each icon which will open a modal popup displaying the number of years of experience and some information about the relevant item.
+The Experience page displays a list of icons of various technologies/software which the developer has experience.  The user can click each icon which will open a modal popup displaying the number of years of experience and some information about the relevant item.
 
-The Contact page has a simple form the user can contact the designer.
+The Contact page has a simple form the user can contact the developer.
 
-The Blog page shows the author's stories and experiences. The user can expand each story by means of a button on each post.
+The Blog page shows the developer's stories and experiences. The user can expand each story by means of a button on each post.
 
 The site utilises the CRUD (Create, Read, Update, Delete) in the Blog section. 
 
