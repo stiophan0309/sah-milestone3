@@ -9,16 +9,20 @@ if path.exists("env.py"):
 
 app = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = 'SAH_Milestone3'
-app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
-
+app.config['MONGO_DBNAME'] = 'SAH_Milestone3'
+app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost')
 mongo = PyMongo(app)
 
 @app.route("/")
 def index():
     """ Open Home page """
     return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
-    
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    """ Open Contact page """
+    return render_template("index.html")
+
 @app.route('/blog')
 def blog():
     """ Open Blog page """
@@ -71,4 +75,5 @@ def admin():
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')))
+            port=int(os.environ.get('PORT')),
+            debug=True)
