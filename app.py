@@ -18,11 +18,6 @@ mongo = PyMongo(app)
 def index():
     """ Open Home page """
     return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
-
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    """ Open Contact page """
-    return render_template("index.html")
     
 @app.route('/blog')
 def blog():
