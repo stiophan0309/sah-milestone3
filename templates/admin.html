@@ -23,10 +23,12 @@
            </div>
         </div>
 
+        <div class="col-sm-12">
+        <div class="content-wrap">
+
         <!-- Create New Blog Post-->
-        <div class="row admin" id="create">
-            <div class="col-sm-12">
-                <div class="content-wrap">
+        <div class="row" id="create">
+         
                     <form action="{{ url_for('add') }}" method="POST" class="col s12">
                         <div class="row">
                             <div class="col-sm-12 admin-function">
@@ -63,13 +65,11 @@
                             </div>
                         </div>
                     </form>
-                </div>
-            </div>
+
         </div>
         <!-- End of Create Post -->
 
-        <div class="col-sm-12">
-            <div class="content-wrap">
+     
                 <button class="btn btn-primary admin-button" onclick="createBlog()">Create New Blog Post</button>
                 <a class="btn btn-primary admin-button" href="{{ url_for('edit') }}">Edit/Delete Existing Post</a>
             </div>
@@ -80,7 +80,7 @@
                 <p>Please NOTE that once posts have been edited or deleted changes <strong>CANNOT</strong> be undone</p>
             </div>
         </div>
-        
+
     </div>
 
 </section>
