@@ -71,9 +71,9 @@ nav {
 }
 .content-wrap { 
     width: 90%;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
     color: #444;
 }
 .main-title {
