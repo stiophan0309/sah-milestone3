@@ -13,15 +13,10 @@ app.config['MONGO_DBNAME'] = 'SAH_Milestone3'
 app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost')
 mongo = PyMongo(app)
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def index():
     """ Open Home page """
     return render_template("index.html", my_experience=mongo.db.experience.find(), my_education=mongo.db.education.find())
-
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    """ Open Contact page """
-    return render_template("index.html")
 
 @app.route('/blog')
 def blog():
