@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400|Marvel|Ubuntu&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Tangerine:wght@400|Exo:wght@500|Ubuntu&display=swap')
 
 /* General styles */
 
@@ -87,6 +87,13 @@ nav {
     font-family: 'Marvel', sans-serif;
     font-size: 2em;
     text-transform: uppercase;
+}
+/* About page */
+.about-title {
+    font-family: 'Exo', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    margin: 20px 0px 50px 0px;
 }
 /* Contact Page */
 
@@ -272,6 +279,7 @@ nav {
     border: 1px solid #fff;
     margin: 0 auto;
     margin-top: 100px;
+    padding: 20px;
     color: #333;
     background-color: #ccc;
     overflow: hidden;
@@ -446,6 +454,7 @@ input, textarea {
   }
 }
 
-#contact, #education, #experience {
+#about, #contact, #education, #experience {
     padding: 0px;
+    min-height: 100vh;
 }
