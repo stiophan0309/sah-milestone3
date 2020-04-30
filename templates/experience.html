@@ -1,578 +1,601 @@
-<div class="view">
+<div class="admin">
 
-<div class="row">
-    <div class="col-sm-12">
-        <div class="content-wrap">
-            <h3>My Experience and Technologies</h3>
-            <p>
-            I have been a web designer now for over five years and have constantly looked at new technologies and new ways of doing things to make things easier and to create a better user experience.
-            I am now a full stack developer and can deliver a solution tailored to suit your needs, below is a list of technologies, libraries and systems I use or am experienced in.  Click the icon for more information.
-            </p>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="content-wrap">
+                <h3>My Experience and Technologies</h3>
+                <p>
+                I have been a web designer now for over five years and have constantly looked at new technologies and new ways of doing things to make things easier and to create a better user experience.
+                I am now a full stack developer and can deliver a solution tailored to suit your needs, below is a list of technologies, libraries and systems I use or am experienced in.  Click the icon for more information.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
-{% for experience in my_experience %}
+    {% for experience in my_experience %}
 
-<div class="row">
-    <div class="col-sm-12">
-        <div class="icons">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="icons">
 
-        <a href="#html_modal" data-toggle="modal"><i class="{{experience.HTML[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="html_modal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
-            {% include 'modal.html' %}
-            </div>
-            <!-- end of Modal -->
+            <a href="#html_modal" data-toggle="modal"><i class="{{experience.HTML[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="html_modal" tabindex="-1" role="dialog" aria-labelledby="htmlModalLabel" aria-hidden="true">
+                {% include 'modal.html' %}
+                </div>
+                <!-- end of Modal -->
 
-        <a href="#css_modal" data-toggle="modal"><i class="{{experience.CSS[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="css_modal" tabindex="-2" role="dialog" aria-labelledby="cssModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.CSS[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="cssModalLabel">{{experience.CSS[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.CSS[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.CSS[3]}}</p>
+            <a href="#css_modal" data-toggle="modal"><i class="{{experience.CSS[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="css_modal" tabindex="-2" role="dialog" aria-labelledby="cssModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.CSS[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="cssModalLabel">{{experience.CSS[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.CSS[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.CSS[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#javascript_modal" data-toggle="modal"><i class="{{experience.Javascript[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="javascript_modal" tabindex="-3" role="dialog" aria-labelledby="jsModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Javascript[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="jsModalLabel">{{experience.Javascript[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Javascript[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Javascript[3]}}</p>
+            <a href="#javascript_modal" data-toggle="modal"><i class="{{experience.Javascript[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="javascript_modal" tabindex="-3" role="dialog" aria-labelledby="jsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Javascript[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="jsModalLabel">{{experience.Javascript[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Javascript[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Javascript[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#python_modal" data-toggle="modal"><i class="{{experience.Python[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="python_modal" tabindex="-4" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Python[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="pythonModalLabel">{{experience.Python[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Python[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Python[3]}}</p>
+            <a href="#python_modal" data-toggle="modal"><i class="{{experience.Python[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="python_modal" tabindex="-4" role="dialog" aria-labelledby="pythonModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Python[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="pythonModalLabel">{{experience.Python[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Python[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Python[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#mongoDB_modal" data-toggle="modal"><i class="{{experience.MongoDB[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="mongoDB_modal" tabindex="-5" role="dialog" aria-labelledby="mongoDBModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.MongoDB[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="mongoDBModalLabel">{{experience.MongoDB[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.MongoDB[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.MongoDB[3]}}</p>
+            <a href="#mongoDB_modal" data-toggle="modal"><i class="{{experience.MongoDB[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="mongoDB_modal" tabindex="-5" role="dialog" aria-labelledby="mongoDBModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.MongoDB[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="mongoDBModalLabel">{{experience.MongoDB[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.MongoDB[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.MongoDB[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#photoshop_modal" data-toggle="modal"><i class="{{experience.Photoshop_CS6[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="photoshop_modal" tabindex="-6" role="dialog" aria-labelledby="photoshopModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Photoshop_CS6[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="photoshopModalLabel">{{experience.Photoshop_CS6[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Photoshop_CS6[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Photoshop_CS6[3]}}</p>
+            <a href="#photoshop_modal" data-toggle="modal"><i class="{{experience.Photoshop_CS6[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="photoshop_modal" tabindex="-6" role="dialog" aria-labelledby="photoshopModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Photoshop_CS6[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="photoshopModalLabel">{{experience.Photoshop_CS6[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Photoshop_CS6[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Photoshop_CS6[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#github_modal" data-toggle="modal"><i class="{{experience.GitHub[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="github_modal" tabindex="-7" role="dialog" aria-labelledby="githubModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.GitHub[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="githubModalLabel">{{experience.GitHub[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.GitHub[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.GitHub[3]}}</p>
+            <a href="#github_modal" data-toggle="modal"><i class="{{experience.GitHub[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="github_modal" tabindex="-7" role="dialog" aria-labelledby="githubModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.GitHub[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="githubModalLabel">{{experience.GitHub[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.GitHub[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.GitHub[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#msoffice_modal" data-toggle="modal"><i class="{{experience.Microsoft_Office[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="msoffice_modal" tabindex="-8" role="dialog" aria-labelledby="msofficeModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Microsoft_Office[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="msofficeModalLabel">{{experience.Microsoft_Office[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Microsoft_Office[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Microsoft_Office[3]}}</p>
+            <a href="#msoffice_modal" data-toggle="modal"><i class="{{experience.Microsoft_Office[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="msoffice_modal" tabindex="-8" role="dialog" aria-labelledby="msofficeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Microsoft_Office[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="msofficeModalLabel">{{experience.Microsoft_Office[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Microsoft_Office[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Microsoft_Office[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#linux_modal" data-toggle="modal"><i class="{{experience.Linux[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="linux_modal" tabindex="-9" role="dialog" aria-labelledby="linuxModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Linux[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="linuxModalLabel">{{experience.Linux[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Linux[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Linux[3]}}</p>
+            <a href="#linux_modal" data-toggle="modal"><i class="{{experience.Linux[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="linux_modal" tabindex="-9" role="dialog" aria-labelledby="linuxModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Linux[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="linuxModalLabel">{{experience.Linux[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Linux[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Linux[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#slack_modal" data-toggle="modal"><i class="{{experience.Slack[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="slack_modal" tabindex="-10" role="dialog" aria-labelledby="slackModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Slack[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="slackModalLabel">{{experience.Slack[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Slack[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Slack[3]}}</p>
+            <a href="#slack_modal" data-toggle="modal"><i class="{{experience.Slack[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="slack_modal" tabindex="-10" role="dialog" aria-labelledby="slackModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Slack[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="slackModalLabel">{{experience.Slack[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Slack[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Slack[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#d3_modal" data-toggle="modal"><i class="{{experience.D3[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="d3_modal" tabindex="-11" role="dialog" aria-labelledby="d3ModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.D3[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="d3ModalLabel">{{experience.D3[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.D3[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.D3[3]}}</p>
+            <a href="#d3_modal" data-toggle="modal"><i class="{{experience.D3[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="d3_modal" tabindex="-11" role="dialog" aria-labelledby="d3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.D3[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="d3ModalLabel">{{experience.D3[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.D3[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.D3[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#bootstrap_modal" data-toggle="modal"><i class="{{experience.Bootstrap[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="bootstrap_modal" tabindex="-12" role="dialog" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Bootstrap[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="bootstrapModalLabel">{{experience.Bootstrap[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Bootstrap[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Bootstrap[3]}}</p>
+            <a href="#bootstrap_modal" data-toggle="modal"><i class="{{experience.Bootstrap[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="bootstrap_modal" tabindex="-12" role="dialog" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Bootstrap[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="bootstrapModalLabel">{{experience.Bootstrap[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Bootstrap[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Bootstrap[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#heroku_modal" data-toggle="modal"><i class="{{experience.Heroku[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="heroku_modal" tabindex="-13" role="dialog" aria-labelledby="herokuModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Heroku[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="herokuModalLabel">{{experience.Heroku[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Heroku[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Heroku[3]}}</p>
+            <a href="#heroku_modal" data-toggle="modal"><i class="{{experience.Heroku[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="heroku_modal" tabindex="-13" role="dialog" aria-labelledby="herokuModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Heroku[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="herokuModalLabel">{{experience.Heroku[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Heroku[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Heroku[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#macos_modal" data-toggle="modal"><i class="{{experience.Macos[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="macos_modal" tabindex="-13" role="dialog" aria-labelledby="macosModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Macos[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="macosModalLabel">{{experience.Macos[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Macos[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Macos[3]}}</p>
+            <a href="#macos_modal" data-toggle="modal"><i class="{{experience.Macos[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="macos_modal" tabindex="-13" role="dialog" aria-labelledby="macosModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Macos[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="macosModalLabel">{{experience.Macos[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Macos[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Macos[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- end of Modal -->
+                <!-- end of Modal -->
 
-        <a href="#windows_modal" data-toggle="modal"><i class="{{experience.Windows[1]}} tech-icon"></i></a>
-            <!-- Modal -->
-            <div class="modal fade" id="windows_modal" tabindex="-14" role="dialog" aria-labelledby="windowsModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-2 modal-left">
-                                        <i class="{{experience.Windows[1]}} modal-icon"></i>
-                                    </div>
-                                    <div class="col-sm-8 modal-left">   
-                                        <h5 class="modal-title" id="windowsModalLabel">{{experience.Windows[0]}}</h5>
-                                        <p class="modal-subtitle">{{experience.Windows[2]}}</p>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-sm-12">
-                                        <p>{{experience.Windows[3]}}</p>
+            <a href="#windows_modal" data-toggle="modal"><i class="{{experience.Windows[1]}} tech-icon"></i></a>
+                <!-- Modal -->
+                <div class="modal fade" id="windows_modal" tabindex="-14" role="dialog" aria-labelledby="windowsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-2 modal-left">
+                                            <i class="{{experience.Windows[1]}} modal-icon"></i>
+                                        </div>
+                                        <div class="col-sm-8 modal-left">   
+                                            <h5 class="modal-title" id="windowsModalLabel">{{experience.Windows[0]}}</h5>
+                                            <p class="modal-subtitle">{{experience.Windows[2]}}</p>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button><br><!-- rule needed for mobile positioning-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <p>{{experience.Windows[3]}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary modal-button" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- end of Modal -->
             </div>
-            <!-- end of Modal -->
         </div>
     </div>
-</div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="content-wrap">
+                <p>
+                This site for example was built using the following:
+                <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Flask</li>
+                <li>Jinja</li>
+                <li>MongoDB</li>
+                </ul>
+                It was developed on <strong>GitPod</strong>, tested on <strong>GitHub</strong> and deployed to <strong>Heroku</strong>.  I also used <strong>Photoshop CS6</strong> for manipulating the front page image and my portrait on the <strong>About</strong> page.
+                </p>
+                <p>
+                I am always looking out for new ways to do things and new technology to embrace so watch this space as the list above grows!
+                </p>
+            </div>
+        </div>
+    </div>
 
 {% endfor %}
 </div>
