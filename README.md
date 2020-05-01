@@ -44,7 +44,7 @@ In the Admin section, adminstrators can create, edit and delete posts in the Blo
 
 ## Wireframes
 
-Wireframe mockups can be found [here](/wireframes)
+Wireframe mockups can be found in the **wireframes** folder in the route directory on my GitHub page [here](https://github.com/stiophan0309/sah-milestone3)
 
 ---
 
@@ -62,7 +62,7 @@ The Contact page has a simple form the user can contact the developer.
 
 The Blog page shows the developer's stories and experiences. The user can expand each story by means of a button on each post.
 
-The site utilises the CRUD (Create, Read, Update, Delete) in the Blog section. 
+The site utilises **CRUD** (Create, Read, Update, Delete) philosophy in the Blog section. 
 
 ### Features to implement
 
