@@ -296,9 +296,7 @@ nav {
     padding: 20px 20px 50px 20px;
     border: 1px solid #333;
 }
-#edit{
-    display: none;
-}
+
 .input-field {
     margin-top: 20px;
 }
@@ -306,12 +304,26 @@ input, textarea {
     width: 100%;
     padding: 10px;
 }
-#edit-blog {
+#edit {
     border: 1px solid #fff;
     padding: 20px;
 }
-#toggle {
+.wrapper {
+    padding: 20px;
+    margin: 20px;
+}
+.int-wrapper {
+    padding: 20px;
+    margin: 0px 0px 30px 30px;
+}
+.int-wrapper h5 {
+    margin-bottom: 20px;
+}
+.existing {
     display: none;
+}
+.existing-show {
+    display: block;
 }
 .existing {
     border: 1px solid #333;
@@ -454,7 +466,7 @@ input, textarea {
   }
 }
 
-#about, #contact, #education, #experience {
+#about, #contact, #education, #experience, #edit {
     padding: 0px;
     min-height: 100vh;
 }

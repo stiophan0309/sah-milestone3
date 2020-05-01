@@ -4,47 +4,58 @@
 {% block content %}
 
 {% for blog in my_blog %}
-<div class="view">
-    <div class="col-sm-12">
-        <div class="content-wrap">
+<div id="edit" class="row admin">
+    <div class="col-sm-12 wrapper">
+        
         <h3>Edit or delete selected blog post</h3>
-        <form action="{{ url_for('update', blog_id=blog._id) }}" id="edit-blog" method="POST">
-            <div class="existing">
-                <h5>Existing title: {{ blog.blog_title|safe }}</h5>
-                <div id="toggle">
-                    <p>Existing content: {{blog.blog_content|safe}}</p>
+        <hr/>
+
+            <div class="int-wrapper">
+            
+                <div class="row">
+                    <h5>Existing title: {{ blog.blog_title|safe }}</h5>
                 </div>
-                <button class="btn btn-primary" title="Click to Show"  type="button" onclick="toggle()">Show/Hide Existing Content</button>
-            </div>
-
-            <p>Please edit new details below and select Save Changes, or leave blank and select Delete Post as required.</p>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <label for="blog_title">Enter New Title Below:</label><br>
-                    <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
+                <div class="row">
+                    <div class="existing">
+                        <p>Existing content: <strong>{{blog.blog_content|safe}}</strong></p>
                     </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <label for="blog_content">Enter New Content Below:</label>
-                    <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}"></textarea>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary switch" title="Click to Show"  type="button">Show/Hide Existing Content</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="last_updated" name="last_updated" type="hidden" class="validate">
+            <hr/>
+            <form action="{{ url_for('update', blog_id=blog._id) }}" id="edit-blog" method="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <p>Please edit new details below and select <strong>Save Changes</strong>, or leave blank and select <strong>Delete Post</strong>  as required.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <button class="btn btn-warning admin-button" type="submit" name="blog_content">Save Changes</button>
-                    <a href="{{url_for('delete', blog_id=blog._id)}}" class="btn btn-danger admin-button">Delete Post</a>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="blog_title">Enter New Title Below:</label><br>
+                        <input id="blog_title" name="blog_title" type="text" class="validate" value="{{blog.blog_title}}" required>
+                    </div>
                 </div>
-            </div>
-
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="blog_content">Enter New Content Below:</label>
+                        <textarea rows="5" id="blog_content" name="blog_content" type="text" class="form-control" value="{{blog.blog_content}}"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="last_updated" name="last_updated" type="hidden" class="validate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <button class="btn btn-warning admin-button" type="submit" name="blog_content">Save Changes</button>
+                        <a href="{{url_for('delete', blog_id=blog._id)}}" class="btn btn-danger admin-button">Delete Post</a>
+                    </div>
+                </div>
         </form>
-        </div>
+        
     </div>
 </div>
 
