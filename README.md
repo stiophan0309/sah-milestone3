@@ -74,17 +74,17 @@ The need or a seperate login facility for administrators is the main requirement
 
 The site uses the following technologies:
 
-* HTML5
-* CSS3
-* Javascript
-* Python
-* Flask
-* Jinja
-* TinyMCE
-* EmailJS
-* Bootstrap
-* DevIcons
-* jQuery
+* **HTML5** - Used to structure the site
+* **CSS3** - Used to provide styling and visual appearance
+* **Bootstrap** - Provides a responsive layout to work across different screen sizes and devices
+* **Javascript** - Used to provide user interactivity such as the Contact form
+* **Python** - Python is in the background and powers the site
+* **Flask** - Used to provide templates to talk to Python
+* **Jinja** - Used to provide templating features
+* **TinyMCE** - Used to provide WYSIWIG text for creating posts in the Blog
+* **EmailJS** - 3rd Party email client enables an email facility without going through a server
+* **DevIcons** - Icon library used in the Experience page for the technology icons
+* **jQuery** - Used as part of **Bootstrap** to provide some functionality in the Navbar
 
 ---
 
