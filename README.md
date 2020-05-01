@@ -1,5 +1,10 @@
 ## Steven A. Horne - Web Designer & Full Stack Web Developer
 
+developed by Steven A. Horne
+
+---
+
+
 The site is the personal portfolio and blog of a web developer and designer.  The site will display information about the the author's skills, education and read their blog page as well as contact them.
 
 The main goals of the site are: 
@@ -9,29 +14,39 @@ The main goals of the site are:
 * Simple and clear UX for users to navigate
 * Provide a blog to share the developer's experiences
 
+---
+
 ## UX
 
 The site is intended for anyone who is interested in web design/development and/or those who are looking for assistance with a project/site.
 
-The site bosts a simple and easy to use interface which is easy to navigate.  The site contains a front page with a Navbar which links to all other page except the **Blog Admin** page (see below).
+The site is designed with a simple approach in mind and is easy to use and navigate. 
+
 
 ### Admin section
 
 The Admin section can ONLY be accessed by adding **/admin** at the end on the url.  This is to prevent access to unauthorised users.
 In the Admin section, adminstrators can create, edit and delete posts in the Blog.
 
+---
+
 ## User Stories
 
-* As a potential customer I want to be able to see the developer's skills and/or work.
-* As a potential customer I want to be able to visit their website and be able to easily navigate arount and be able to contact the developer.
-* As a potential customer I want to be able to see if their own site is professionally designed and easy to use.
-* As a potential customer I want fo find out information about the developer.
+* As a user I want to be able to see the developer's skills and/or work.
+* As a user I want to be able to visit their website and be able to easily navigate arount and be able to contact the developer.
+* As a user I want to be able to see if their own site is professionally designed and easy to use.
+* As a user customer I want fo find out information about the developer.
 * As a web developer I want to compare the developer's site to my own.
 * As a web developer I want to see what the site offers and if it offers anything different.
+* As an administrator I want to be able to access the Blog Admin page and be able to create, delete and update blog posts
+
+---
 
 ## Wireframes
 
-Wireframe mockups can be found here
+Wireframe mockups can be found [here](/wireframes)
+
+---
 
 ## Features
 
@@ -49,27 +64,41 @@ The Blog page shows the developer's stories and experiences. The user can expand
 
 The site utilises the CRUD (Create, Read, Update, Delete) in the Blog section. 
 
-###Features to implement
+### Features to implement
 
 The need or a seperate login facility for administrators is the main requirement outstanding.
 
-##Technologies
+---
+
+## Technologies
 
 The site uses the following technologies:
 
-HTML5
-CSS3
-Javascript
-Python
-Flask
-Jinja
-TinyMCE
-EmailJS
-Bootstrap
-DevIcons
-jQuery
+* HTML5
+* CSS3
+* Javascript
+* Python
+* Flask
+* Jinja
+* TinyMCE
+* EmailJS
+* Bootstrap
+* DevIcons
+* jQuery
+
+---
 
 ## Testing
+
+Throughout the the development process the testing was done manually including:
+
+* Tesing responsiveness on different devices and browsers
+* Checked DevTools for errors and API responses and requests
+* Used the MongoDB GUI to check database to make sure entries were added/deleted/updated
+* Checked EmailJS GUI to check if emails were being sent OK
+* Got family members to check their devices if they could access use the deployed app
+
+---
 
 ## Deployment
 
@@ -81,11 +110,15 @@ The live site is deployed to Heroku at:
 
 https://sah-milestone3.herokuapp.com/
 
+---
+
 ## Credits
 
-The Timeline on the Education Page was sourced from W3C schools. Link: [https://www.w3schools.com/howto/howto_css_timeline.asp]
+The Timeline on the Education Page was sourced from W3C schools.  [Link](https://www.w3schools.com/howto/howto_css_timeline.asp "here")
 
+---
 
 ## Media
 
-The front page image is property of the author.
+The front page image is property of the developer.
+The portrait of me in the About page was taken by John Maxwell.
