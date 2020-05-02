@@ -28,9 +28,8 @@ The site is designed with a simple approach in mind and is easy to use and navig
 The Admin section can ONLY be accessed by adding **/admin** at the end on the url.  This is to prevent access to unauthorised users.
 In the Admin section, adminstrators can create, edit and delete posts in the Blog.
 
----
 
-## User Stories
+### User Stories
 
 * As a user I want to be able to see the developer's skills and/or work.
 * As a user I want to be able to visit their website and be able to easily navigate arount and be able to contact the developer.
@@ -66,7 +65,8 @@ The site utilises **CRUD** (Create, Read, Update, Delete) philosophy in the Blog
 
 ### Features to implement
 
-The need or a seperate login facility for administrators is the main requirement outstanding.
+1. The need or a seperate login facility for administrators is the main requirement outstanding.
+2. A popup confirming email sent on Contact page
 
 ---
 
@@ -98,6 +98,46 @@ Throughout the the development process the testing was done manually including:
 * Checked EmailJS GUI to check if emails were being sent OK
 * Got family members to check their devices if they could access use the deployed app
 
+The following steps were taken while testing:
+
+### Contact form
+
+1. User clicks on the **Contact** link on the Navbar
+2. User fills out the required fields, their *name*, *email* and *message* and clicks **Submit**
+3. The console is checked to see if the email is sent, if so a **200** code response will be present
+4. I check my email account to see if the emil is received
+5. I check the **Email Actitvity** section in EmailJS to make sure the email appears
+
+### Add a new post in the Blog
+
+1. When the site is loaded, the administrator types **/admin** after the url and presses </Enter>
+2. The **Blog Admin** page then loads, the administrator then selects **Create New Blog Post**
+3. The relevant fields are filled out, for the post content formatting is avaiable via the Editor (TinyMCE)
+4. Once finished **Add Post** is selected and the page is redirected to the Blog page where the post should be visible
+5. **MongoDB** is checked to make sure the post was added correctly
+
+### Deleting a post from the Blog
+
+1. When the site is loaded, the administrator types **/admin** after the url and presses </Enter>
+2. The **Blog Admin** page then loads, the administrator then selects **Edit/Delete Blog Post**
+3. The **Edit or delete selected blog post** loads
+4. The administrator scrolls to the relevant post, going by the title, the **Show/Hide existing Content** button reveals the existing content**
+5. The administrators selects **Delete Post** and the page is redirected to the Blog page where the post should no longer be visible
+6. **MongoDB** is checked to make sure the post is no longer present
+
+### Editing an existing Blog post
+
+1. When the site is loaded, the administrator types **/admin** after the url and presses </Enter>
+2. The **Blog Admin** page then loads, the administrator then selects **Edit/Delete Blog Post**
+3. The **Edit or delete selected blog post** loads
+4. The administrator scrolls to the relevant post, going by the title, the **Show/Hide existing Content** button reveals the existing content**
+5. The administrator makes the required changes and presses **Save Changes** and the page is redirected to the Blog page where the amendded post should be visible
+6. The post's **Late Updated** date/time should reflect the changes made
+7. **MongoDB** is checked to make sure the post is amended
+
+
+
+
 ---
 
 ## Deployment
@@ -105,6 +145,14 @@ Throughout the the development process the testing was done manually including:
 The development site is located on my GitHub site at:
 
 https://github.com/stiophan0309/sah-milestone3
+
+In order to run the code at GitHub the following are required:
+
+1. The user goes to the above url, and selects the **GitPod** icon
+2. Once GitPod is loaded, the user makes sure the file *env.py* is present with the required credentials
+3. Installs the required libraries by running `pip3 install -r requirements.txt` in the Console
+4. Opens *app.py* and either presses the green arrow on the top left of the screen or typing `python3 app.py` in the Console
+5. When the popup occurs on the left select **Open Browser** and then the application will load
 
 The live site is deployed to Heroku at:
 
